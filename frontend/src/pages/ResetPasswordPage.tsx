@@ -81,7 +81,7 @@ const ResetPasswordPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F4] flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-[#FAFAF8] flex items-center justify-center py-12 px-4">
       <div className="max-w-[480px] w-full">
         {/* Logo */}
         <AuthHeader />
@@ -94,15 +94,15 @@ const ResetPasswordPage: React.FC = () => {
               <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-8 h-8 text-green-500" />
               </div>
-              <h1 className="font-syne font-bold text-2xl text-[#221410] mb-3">
+              <h1 className="font-playfair font-bold text-2xl text-[#221410] mb-3">
                 Password Reset!
               </h1>
-              <p className="font-manrope font-extralight text-sm text-[#4B5563] mb-6">
+              <p className="font-inter font-extralight text-sm text-[#4B5563] mb-6">
                 Your password has been reset successfully. Redirecting you to sign in...
               </p>
               <Link
                 to="/signin"
-                className="w-full inline-block bg-[#D4755B] text-white font-manrope font-bold py-3 rounded-xl hover:bg-[#C05621] transition-all text-center"
+                className="w-full inline-block bg-[#1B3A5C] text-white font-inter font-bold py-3 rounded-xl hover:bg-[#C05621] transition-all text-center"
               >
                 Sign In Now
               </Link>
@@ -112,12 +112,12 @@ const ResetPasswordPage: React.FC = () => {
             <>
               <div className="text-center mb-8">
                 <div className="w-14 h-14 bg-[#FFF7ED] rounded-full flex items-center justify-center mx-auto mb-5">
-                  <Lock className="w-7 h-7 text-[#D4755B]" />
+                  <Lock className="w-7 h-7 text-[#1B3A5C]" />
                 </div>
-                <h1 className="font-syne font-bold text-3xl text-[#221410] mb-2">
+                <h1 className="font-playfair font-bold text-3xl text-[#221410] mb-2">
                   Reset Password
                 </h1>
-                <p className="font-manrope font-extralight text-sm text-[#4B5563]">
+                <p className="font-inter font-extralight text-sm text-[#4B5563]">
                   Create a new secure password for your account.
                 </p>
               </div>
@@ -125,7 +125,7 @@ const ResetPasswordPage: React.FC = () => {
               <form onSubmit={handleSubmit} className="space-y-5">
                 {/* New Password */}
                 <div>
-                  <label className="block font-manrope font-medium text-sm text-[#374151] mb-2">
+                  <label className="block font-inter font-medium text-sm text-[#374151] mb-2">
                     New Password
                   </label>
                   <div className="relative">
@@ -135,13 +135,13 @@ const ResetPasswordPage: React.FC = () => {
                       value={password}
                       onChange={handlePasswordChange}
                       placeholder="Enter new password"
-                      className="w-full bg-[#F5F1E8] border border-[#EBE5DE] rounded-xl pl-12 pr-12 py-3.5 font-manrope text-sm text-[#221410] placeholder:text-[#9CA3AF] focus:outline-none focus:border-[#D4755B] focus:ring-1 focus:ring-[#D4755B] transition-all"
+                      className="w-full bg-[#F5F1E8] border border-[#EBE5DE] rounded-xl pl-12 pr-12 py-3.5 font-inter text-sm text-[#221410] placeholder:text-[#9CA3AF] focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C] transition-all"
                       required
                     />
                     <button
                       type="button"
                       onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#D4755B] transition-colors"
+                      className="absolute right-4 top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#1B3A5C] transition-colors"
                     >
                       {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                     </button>
@@ -160,7 +160,7 @@ const ResetPasswordPage: React.FC = () => {
                           />
                         ))}
                       </div>
-                      <p className="font-manrope text-xs text-[#6B7280]">
+                      <p className="font-inter text-xs text-[#6B7280]">
                         Password strength: <span className="font-medium">{getStrengthLabel()}</span>
                       </p>
                     </div>
@@ -169,7 +169,7 @@ const ResetPasswordPage: React.FC = () => {
 
                 {/* Confirm Password */}
                 <div>
-                  <label className="block font-manrope font-medium text-sm text-[#374151] mb-2">
+                  <label className="block font-inter font-medium text-sm text-[#374151] mb-2">
                     Confirm Password
                   </label>
                   <div className="relative">
@@ -179,13 +179,13 @@ const ResetPasswordPage: React.FC = () => {
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
                       placeholder="Confirm new password"
-                      className="w-full bg-[#F5F1E8] border border-[#EBE5DE] rounded-xl pl-12 pr-12 py-3.5 font-manrope text-sm text-[#221410] placeholder:text-[#9CA3AF] focus:outline-none focus:border-[#D4755B] focus:ring-1 focus:ring-[#D4755B] transition-all"
+                      className="w-full bg-[#F5F1E8] border border-[#EBE5DE] rounded-xl pl-12 pr-12 py-3.5 font-inter text-sm text-[#221410] placeholder:text-[#9CA3AF] focus:outline-none focus:border-[#1B3A5C] focus:ring-1 focus:ring-[#1B3A5C] transition-all"
                       required
                     />
                     <button
                       type="button"
                       onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#D4755B] transition-colors"
+                      className="absolute right-4 top-1/2 -translate-y-1/2 text-[#94A3B8] hover:text-[#1B3A5C] transition-colors"
                     >
                       {showConfirmPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
                     </button>
@@ -197,12 +197,12 @@ const ResetPasswordPage: React.FC = () => {
                       {passwordsMatch ? (
                         <>
                           <CheckCircle className="w-4 h-4 text-green-500" />
-                          <span className="font-manrope text-xs text-green-600">Passwords match</span>
+                          <span className="font-inter text-xs text-green-600">Passwords match</span>
                         </>
                       ) : (
                         <>
                           <AlertCircle className="w-4 h-4 text-red-500" />
-                          <span className="font-manrope text-xs text-red-600">Passwords don't match</span>
+                          <span className="font-inter text-xs text-red-600">Passwords don't match</span>
                         </>
                       )}
                     </div>
@@ -211,7 +211,7 @@ const ResetPasswordPage: React.FC = () => {
 
                 {/* Requirements */}
                 <div className="bg-[#F5F1E8] rounded-xl p-4">
-                  <p className="font-manrope font-medium text-xs text-[#374151] mb-2">Password Requirements:</p>
+                  <p className="font-inter font-medium text-xs text-[#374151] mb-2">Password Requirements:</p>
                   <ul className="space-y-1">
                     {[
                       { text: 'At least 8 characters', met: password.length >= 8 },
@@ -222,7 +222,7 @@ const ResetPasswordPage: React.FC = () => {
                     ].map((req, i) => (
                       <li key={i} className="flex items-center gap-2">
                         <CheckCircle className={`w-3.5 h-3.5 ${req.met ? 'text-green-500' : 'text-[#D1D5DB]'}`} />
-                        <span className={`font-manrope text-xs ${req.met ? 'text-green-600' : 'text-[#9CA3AF]'}`}>
+                        <span className={`font-inter text-xs ${req.met ? 'text-green-600' : 'text-[#9CA3AF]'}`}>
                           {req.text}
                         </span>
                       </li>
@@ -234,7 +234,7 @@ const ResetPasswordPage: React.FC = () => {
                 <button
                   type="submit"
                   disabled={loading || !isFormValid}
-                  className="w-full bg-[#D4755B] hover:bg-[#C05621] disabled:opacity-60 disabled:cursor-not-allowed text-white font-manrope font-bold text-base py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                  className="w-full bg-[#1B3A5C] hover:bg-[#C05621] disabled:opacity-60 disabled:cursor-not-allowed text-white font-inter font-bold text-base py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                 >
                   {loading ? (
                     <>
@@ -250,7 +250,7 @@ const ResetPasswordPage: React.FC = () => {
               {/* Back to Sign In */}
               <Link
                 to="/signin"
-                className="flex items-center justify-center gap-2 mt-6 font-manrope font-medium text-sm text-[#64748B] hover:text-[#D4755B] transition-colors"
+                className="flex items-center justify-center gap-2 mt-6 font-inter font-medium text-sm text-[#64748B] hover:text-[#1B3A5C] transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back to Sign In

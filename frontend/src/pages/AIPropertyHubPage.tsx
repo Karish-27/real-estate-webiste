@@ -78,19 +78,17 @@ export interface SearchParams {
 
 /* ── Production landing page ────────────────────────────── */
 
-const GITHUB_URL = 'https://github.com/AAYUSH412/Real-Estate-Website';
-
 const AIHubProductionPage: React.FC = () => {
   const features = [
     {
       icon: 'search',
       title: 'Smart Property Search',
-      description: 'Search across cities with AI-powered filters for budget, property type, and category.',
+      description: 'Search across cities with intelligent filters for budget, property type, and category.',
     },
     {
       icon: 'analytics',
       title: 'Market Analysis',
-      description: 'Get GPT-4.1 powered analysis with best value picks and personalized recommendations.',
+      description: 'Data-powered analysis with best value picks and personalised recommendations for your profile.',
     },
     {
       icon: 'trending_up',
@@ -99,73 +97,59 @@ const AIHubProductionPage: React.FC = () => {
     },
     {
       icon: 'lightbulb',
-      title: 'Investment Tips',
-      description: 'AI-generated investment tips based on market data and location analysis.',
+      title: 'Investment Insights',
+      description: 'Expert investment tips based on market data, location analysis, and historical performance.',
     },
   ];
 
-  const steps = [
-    { step: '01', title: 'Clone the Repository', command: `git clone ${GITHUB_URL}.git` },
-    { step: '02', title: 'Install Dependencies', command: 'cd frontend && npm install' },
-    { step: '03', title: 'Set Up Environment', command: 'cp .env.example .env  # Add your API keys' },
-    { step: '04', title: 'Run Locally', command: 'npm run dev' },
-  ];
-
   return (
-    <div className="bg-[#FAF8F4]">
+    <div style={{ background: '#FAFAF8' }}>
       {/* Hero Section */}
-      <section className="relative bg-[#221410] overflow-hidden">
-        {/* Decorative blurs */}
-        <div className="absolute top-20 right-20 w-80 h-80 bg-[rgba(212,117,91,0.15)] rounded-full blur-[80px]" />
-        <div className="absolute bottom-10 left-10 w-60 h-60 bg-[rgba(212,117,91,0.1)] rounded-full blur-[60px]" />
-
-        <div className="max-w-[1280px] mx-auto px-8 pt-32 pb-20 relative z-10">
+      <section className="relative overflow-hidden" style={{ background: '#FAFAF8', paddingTop: '80px' }}>
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(27,58,92,0.06) 0%, transparent 55%)',
+          }}
+        />
+        <div className="max-w-[1280px] mx-auto px-8 pt-20 pb-16 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             {/* Badge */}
-            <div className="inline-flex items-center gap-3 bg-[rgba(212,117,91,0.15)] border border-[rgba(212,117,91,0.3)] rounded-full px-5 py-2.5 mb-8">
-              <span className="font-material-icons text-[#D4755B] text-lg">smart_toy</span>
-              <span className="font-manrope font-bold text-sm text-[#D4755B] uppercase tracking-wider">
-                AI-Powered Feature
-              </span>
+            <div
+              className="inline-flex items-center gap-2.5 rounded-full px-5 py-2 mb-8 text-sm font-semibold"
+              style={{ background: 'rgba(27,58,92,0.07)', border: '1px solid rgba(27,58,92,0.12)', color: '#1B3A5C', letterSpacing: '0.06em' }}
+            >
+              <span className="font-material-icons text-[#1B3A5C]" style={{ fontSize: 18 }}>insights</span>
+              Market Insights Platform
             </div>
 
-            <h1 className="font-fraunces text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              AI Property Hub
+            <h1 className="font-playfair mb-5" style={{ fontSize: 'clamp(36px,5vw,60px)', fontWeight: 600, color: '#1A1A1A', lineHeight: 1.1 }}>
+              Property Insights Hub
             </h1>
-            <p className="font-manrope text-lg text-[#9ca3af] leading-relaxed mb-10 max-w-2xl mx-auto">
-              Our AI Property Hub uses GPT-4.1 to analyze real estate data, provide market insights,
-              and help you find the perfect property. This feature is available when you run the project locally.
+            <p className="text-lg mb-10 max-w-2xl mx-auto" style={{ color: '#5A5A5A', lineHeight: 1.75 }}>
+              Smart property search, market trend analysis, rental yield data, and investment insights
+              — all powered by real market data to help you make informed decisions.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <a
-                href={GITHUB_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#D4755B] text-white font-manrope font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#B86851] transition-all hover:shadow-xl inline-flex items-center gap-3"
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
-                View on GitHub
-              </a>
               <Link
                 to="/properties"
-                className="border-2 border-[rgba(255,255,255,0.2)] text-white font-manrope font-bold text-lg px-8 py-4 rounded-xl hover:border-[#D4755B] hover:text-[#D4755B] transition-all inline-flex items-center gap-2"
+                className="btn-shimmer font-semibold text-base px-8 py-4 rounded-xl inline-flex items-center gap-2 transition-all"
+                style={{ background: '#1B3A5C', color: '#FFFFFF', boxShadow: '0 4px 16px rgba(27,58,92,0.22)' }}
               >
                 Browse Properties
                 <span className="font-material-icons text-sm">arrow_forward</span>
               </Link>
-            </div>
-
-            {/* Info Banner */}
-            <div className="bg-[rgba(212,117,91,0.1)] border border-[rgba(212,117,91,0.25)] rounded-2xl p-6 max-w-xl mx-auto">
-              <div className="flex items-start gap-3">
-                <span className="font-material-icons text-[#D4755B] text-xl mt-0.5">info</span>
-                <p className="font-manrope text-sm text-[#d1c4b7] text-left leading-relaxed">
-                  The AI Property Hub requires API credits to operate. To save deployment costs, this feature is
-                  disabled on the live site. Clone the repo and run it locally to experience the full AI capabilities.
-                </p>
-              </div>
+              <Link
+                to="/contact"
+                className="font-semibold text-base px-8 py-4 rounded-xl inline-flex items-center gap-2 border transition-all"
+                style={{ border: '1.5px solid #1B3A5C', color: '#1B3A5C', background: 'transparent' }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#1B3A5C'; (e.currentTarget as HTMLElement).style.color = '#FFFFFF'; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#1B3A5C'; }}
+              >
+                Talk to an Advisor
+              </Link>
             </div>
           </div>
         </div>
@@ -174,11 +158,12 @@ const AIHubProductionPage: React.FC = () => {
       {/* Features Grid */}
       <section className="max-w-[1280px] mx-auto px-8 py-20">
         <div className="text-center mb-14">
-          <h2 className="font-fraunces text-3xl lg:text-4xl font-bold text-[#111827] mb-4">
-            What You'll Get Locally
+          <div className="nest-label mb-3">What's Inside</div>
+          <h2 className="font-playfair font-semibold" style={{ fontSize: 'clamp(28px,3vw,40px)', color: '#1A1A1A' }}>
+            Exclusive Market Tools
           </h2>
-          <p className="font-manrope text-[#6b7280] max-w-xl mx-auto">
-            All these AI-powered features are fully functional when you run the project on your machine.
+          <p className="mt-3 text-sm max-w-xl mx-auto" style={{ color: '#7A7872', lineHeight: 1.75 }}>
+            Our verified clients gain access to a suite of proprietary tools designed to maximise investment returns.
           </p>
         </div>
 
@@ -186,58 +171,42 @@ const AIHubProductionPage: React.FC = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white border border-[#E6D5C3] rounded-2xl p-6 hover:shadow-lg hover:border-[#D4755B]/30 transition-all group"
+              className="bg-white rounded-2xl p-6 card-lift"
+              style={{ border: '1px solid #E8E6E0', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
             >
-              <div className="w-12 h-12 bg-[rgba(212,117,91,0.1)] rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#D4755B] transition-colors">
-                <span className="font-material-icons text-[#D4755B] group-hover:text-white transition-colors">
-                  {feature.icon}
-                </span>
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+                style={{ background: 'rgba(27,58,92,0.07)' }}
+              >
+                <span className="font-material-icons" style={{ color: '#1B3A5C' }}>{feature.icon}</span>
               </div>
-              <h3 className="font-syne font-bold text-lg text-[#111827] mb-2">{feature.title}</h3>
-              <p className="font-manrope text-sm text-[#6b7280] leading-relaxed">{feature.description}</p>
+              <h3 className="font-inter font-semibold text-base mb-2" style={{ color: '#1A1A1A' }}>{feature.title}</h3>
+              <p className="text-sm leading-relaxed" style={{ color: '#7A7872' }}>{feature.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Setup Steps */}
-      <section className="bg-[#F5F1E8] py-20">
-        <div className="max-w-[1280px] mx-auto px-8">
-          <div className="text-center mb-14">
-            <h2 className="font-fraunces text-3xl lg:text-4xl font-bold text-[#111827] mb-4">
-              Get Started in 4 Steps
-            </h2>
-            <p className="font-manrope text-[#6b7280] max-w-xl mx-auto">
-              Set up the project locally and start using the AI Property Hub in minutes.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {steps.map((item) => (
-              <div key={item.step} className="bg-white rounded-2xl p-6 border border-[#E6D5C3]">
-                <span className="font-space-mono text-4xl font-bold text-[#D4755B]/20 block mb-3">
-                  {item.step}
-                </span>
-                <h3 className="font-syne font-bold text-lg text-[#111827] mb-3">{item.title}</h3>
-                <code className="block bg-[#221410] text-[#D4755B] font-space-mono text-xs rounded-lg p-3 overflow-x-auto">
-                  {item.command}
-                </code>
-              </div>
-            ))}
-          </div>
-
-          {/* GitHub CTA */}
-          <div className="text-center mt-12">
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#221410] text-white font-manrope font-bold px-8 py-4 rounded-xl hover:bg-[#3a2419] transition-all shadow-lg hover:shadow-xl"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
-              Download from GitHub
-            </a>
-          </div>
+      {/* Upgrade CTA / Lead Gen */}
+      <section className="py-20" style={{ background: '#1B3A5C' }}>
+        <div className="max-w-[800px] mx-auto px-8 text-center">
+          <h2 className="font-playfair font-semibold mb-5" style={{ fontSize: 'clamp(28px,3vw,40px)', color: '#FFFFFF' }}>
+            Get Full Access to Market Intel
+          </h2>
+          <p className="text-sm mb-10 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.7)', lineHeight: 1.75 }}>
+            To unlock our in-depth predictive modeling, neighborhood performance indices, and personalized 
+            investment recommendations, simply connect with one of our expert advisors. We provide full 
+            market data exclusivity to our serious clients.
+          </p>
+          
+          <Link
+            to="/contact"
+            className="btn-shimmer font-semibold text-base px-8 py-4 rounded-xl inline-flex items-center gap-2 transition-all"
+            style={{ background: '#FFFFFF', color: '#1B3A5C', boxShadow: '0 4px 16px rgba(0,0,0,0.2)' }}
+          >
+            Schedule a Strategy Session
+            <span className="font-material-icons text-sm">arrow_forward</span>
+          </Link>
         </div>
       </section>
     </div>
@@ -255,7 +224,7 @@ const AIPropertyHubPage: React.FC = () => {
   /* ── AI Hub disabled → show "download & run locally" page ── */
   if (!AI_HUB_ENABLED) {
     return (
-      <div className="bg-[#FAF8F4] min-h-screen">
+      <div className="bg-[#FAFAF8] min-h-screen">
         <Navbar />
         <AIHubProductionPage />
         <Footer />
@@ -398,12 +367,12 @@ const AIHubDevPage: React.FC = () => {
   /* ── Render ──────────────────────────────────────────── */
 
   return (
-    <div className="bg-[#FAF8F4] min-h-screen">
+    <div className="bg-[#FAFAF8] min-h-screen">
       <Navbar />
 
       {/* Hero — search form */}
       {AIHeroSection && (
-        <React.Suspense fallback={<div className="h-96 flex items-center justify-center"><div className="w-12 h-12 border-4 border-[#D4755B] border-t-transparent rounded-full animate-spin" /></div>}>
+        <React.Suspense fallback={<div className="h-96 flex items-center justify-center"><div className="w-12 h-12 border-4 border-[#1B3A5C] border-t-transparent rounded-full animate-spin" /></div>}>
           <AIHeroSection
             onSearch={handleSearch}
             loading={searchLoading}
@@ -438,14 +407,14 @@ const AIHubDevPage: React.FC = () => {
       {hasSearched && !searchLoading && properties.length > 0 && AILocationTrends && (
         <React.Suspense fallback={null}>
           {!hasLoadedTrends ? (
-            <section className="bg-[#FAF8F4] py-10 border-t border-[#E6E0DA]">
+            <section className="bg-[#FAFAF8] py-10 border-t border-[#E6E0DA]">
               <div className="max-w-[1200px] mx-auto px-6 text-center">
-                <p className="font-manrope text-sm text-[#6b7280] mb-4">
+                <p className="font-inter text-sm text-[#6b7280] mb-4">
                   Want to see price trends and rental yields for {searchParams.city}?
                 </p>
                 <button
                   onClick={() => fetchTrends(searchParams.city)}
-                  className="inline-flex items-center gap-2 bg-[#D4755B] hover:bg-[#C05621] text-white font-manrope font-semibold text-sm px-6 py-3 rounded-xl transition-all shadow-md shadow-[#D4755B]/20"
+                  className="inline-flex items-center gap-2 bg-[#1B3A5C] hover:bg-[#C05621] text-white font-inter font-semibold text-sm px-6 py-3 rounded-xl transition-all shadow-md shadow-[#1B3A5C]/20"
                 >
                   <span className="text-base">&#x1F4C8;</span>
                   Load Location Trends

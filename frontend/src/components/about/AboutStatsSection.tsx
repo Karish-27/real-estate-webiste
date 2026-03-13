@@ -42,7 +42,7 @@ const AboutStatsSection: React.FC = () => {
               </div>
               
               {/* Label */}
-              <div className="font-manrope font-extralight text-xs text-[#6b7280] uppercase tracking-[1.2px]">
+              <div className="font-inter font-extralight text-xs text-[#6b7280] uppercase tracking-[1.2px]">
                 {stat.label}
               </div>
             </div>
