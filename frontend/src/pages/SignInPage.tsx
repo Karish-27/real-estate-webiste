@@ -21,7 +21,7 @@ const SignInPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F4] flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-[#FAFAF8] flex items-center justify-center py-12 px-4">
       <div className="max-w-[480px] w-full">
         {/* Logo */}
         <AuthHeader />
@@ -30,10 +30,10 @@ const SignInPage: React.FC = () => {
         <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-xl">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="font-syne font-bold text-3xl text-[#221410] mb-2">
+            <h1 className="font-playfair font-bold text-3xl text-[#221410] mb-2">
               Welcome Back
             </h1>
-            <p className="font-manrope font-extralight text-sm text-[#4B5563]">
+            <p className="font-inter font-extralight text-sm text-[#4B5563]">
               Sign in to access your account
             </p>
           </div>
@@ -41,7 +41,7 @@ const SignInPage: React.FC = () => {
           {/* Error */}
           {error && (
             <div className="bg-red-50 border border-red-200 rounded-lg p-3 mb-4">
-              <p className="font-manrope text-sm text-red-600">{error}</p>
+              <p className="font-inter text-sm text-red-600">{error}</p>
             </div>
           )}
 
@@ -52,11 +52,11 @@ const SignInPage: React.FC = () => {
           <SocialLoginButtons />
 
           {/* Sign Up Link */}
-          <p className="text-center font-manrope font-extralight text-sm text-[#64748B] mt-6">
+          <p className="text-center font-inter font-extralight text-sm text-[#64748B] mt-6">
             Don't have an account?{' '}
             <Link
               to="/signup"
-              className="font-semibold text-[#D4755B] hover:text-[#C05621] transition-colors"
+              className="font-semibold text-[#1B3A5C] hover:text-[#C05621] transition-colors"
             >
               Sign Up
             </Link>
@@ -67,7 +67,7 @@ const SignInPage: React.FC = () => {
         <div className="text-center mt-6">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 font-manrope font-medium text-sm text-[#64748B] hover:text-[#D4755B] transition-colors"
+            className="inline-flex items-center gap-2 font-inter font-medium text-sm text-[#64748B] hover:text-[#1B3A5C] transition-colors"
           >
             <span className="material-icons text-base">arrow_back</span>
             <span>Back to Home</span>

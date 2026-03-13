@@ -7,15 +7,15 @@ const ContactInfoCards: React.FC = () => {
       <div className="bg-white border border-[#E6E0DA] rounded-xl p-6">
         <div className="flex items-start gap-4">
           <div className="w-12 h-12 bg-[rgba(212,117,91,0.1)] rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="material-icons text-2xl text-[#D4755B]">
+            <span className="material-icons text-2xl text-[#1B3A5C]">
               location_on
             </span>
           </div>
           <div className="flex-1">
-            <h3 className="font-syne font-bold text-lg text-[#221410] mb-2">
+            <h3 className="font-playfair font-bold text-lg text-[#221410] mb-2">
               Visit Our Office
             </h3>
-            <p className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed mb-3">
+            <p className="font-inter font-extralight text-sm text-[#4B5563] leading-relaxed mb-3">
               502, Devpath Building,<br />
               Near Torrent Lab,<br />
               Ashram Road, Ahmedabad
@@ -24,7 +24,7 @@ const ContactInfoCards: React.FC = () => {
               href="https://maps.google.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 font-manrope font-medium text-sm text-[#D4755B] hover:text-[#C05621] transition-colors"
+              className="inline-flex items-center gap-1 font-inter font-medium text-sm text-[#1B3A5C] hover:text-[#C05621] transition-colors"
             >
               <span>Get Directions</span>
               <span className="material-icons text-sm">
@@ -39,18 +39,18 @@ const ContactInfoCards: React.FC = () => {
       <div className="bg-white border border-[#E6E0DA] rounded-xl p-6">
         <div className="flex items-start gap-4">
           <div className="w-12 h-12 bg-[rgba(212,117,91,0.1)] rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="material-icons text-2xl text-[#D4755B]">
+            <span className="material-icons text-2xl text-[#1B3A5C]">
               phone
             </span>
           </div>
           <div className="flex-1">
-            <h3 className="font-syne font-bold text-lg text-[#221410] mb-3">
+            <h3 className="font-playfair font-bold text-lg text-[#221410] mb-3">
               Call or Email Us
             </h3>
             <div className="space-y-2">
               <a 
                 href="tel:+919876543210" 
-                className="flex items-center gap-2 font-manrope font-extralight text-sm text-[#4B5563] hover:text-[#D4755B] transition-colors"
+                className="flex items-center gap-2 font-inter font-extralight text-sm text-[#4B5563] hover:text-[#1B3A5C] transition-colors"
               >
                 <span className="material-icons text-base">
                   call
@@ -59,7 +59,7 @@ const ContactInfoCards: React.FC = () => {
               </a>
               <a 
                 href="mailto:hello@buildestate.com" 
-                className="flex items-center gap-2 font-manrope font-extralight text-sm text-[#4B5563] hover:text-[#D4755B] transition-colors"
+                className="flex items-center gap-2 font-inter font-extralight text-sm text-[#4B5563] hover:text-[#1B3A5C] transition-colors"
               >
                 <span className="material-icons text-base">
                   email
@@ -75,15 +75,15 @@ const ContactInfoCards: React.FC = () => {
       <div className="bg-white border border-[#E6E0DA] rounded-xl p-6">
         <div className="flex items-start gap-4">
           <div className="w-12 h-12 bg-[rgba(212,117,91,0.1)] rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="material-icons text-2xl text-[#D4755B]">
+            <span className="material-icons text-2xl text-[#1B3A5C]">
               schedule
             </span>
           </div>
           <div className="flex-1">
-            <h3 className="font-syne font-bold text-lg text-[#221410] mb-3">
+            <h3 className="font-playfair font-bold text-lg text-[#221410] mb-3">
               Business Hours
             </h3>
-            <div className="space-y-2 font-manrope font-extralight text-sm text-[#4B5563]">
+            <div className="space-y-2 font-inter font-extralight text-sm text-[#4B5563]">
               <div className="flex justify-between items-center">
                 <span>Mon - Fri:</span>
                 <span className="font-medium text-[#221410]">09:00 - 18:00</span>

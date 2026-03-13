@@ -22,7 +22,7 @@ const SignUpPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F4] flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-[#FAFAF8] flex items-center justify-center py-12 px-4">
       <div className="max-w-[520px] w-full">
         {/* Logo */}
         <AuthHeader />
@@ -31,10 +31,10 @@ const SignUpPage: React.FC = () => {
         <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-xl">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="font-syne font-bold text-3xl text-[#221410] mb-2">
+            <h1 className="font-playfair font-bold text-3xl text-[#221410] mb-2">
               Create Account
             </h1>
-            <p className="font-manrope font-extralight text-sm text-[#4B5563]">
+            <p className="font-inter font-extralight text-sm text-[#4B5563]">
               Join BuildEstate and find your dream home
             </p>
           </div>
@@ -42,7 +42,7 @@ const SignUpPage: React.FC = () => {
           {/* Error */}
           {error && (
             <div className="bg-red-50 border border-red-200 rounded-lg p-3 mb-4">
-              <p className="font-manrope text-sm text-red-600">{error}</p>
+              <p className="font-inter text-sm text-red-600">{error}</p>
             </div>
           )}
 
@@ -55,7 +55,7 @@ const SignUpPage: React.FC = () => {
               <div className="w-full border-t border-[#E6E0DA]"></div>
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="px-4 bg-white font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider">
+              <span className="px-4 bg-white font-inter font-extralight text-xs text-[#64748B] uppercase tracking-wider">
                 Or sign up with
               </span>
             </div>
@@ -65,7 +65,7 @@ const SignUpPage: React.FC = () => {
           <div className="grid grid-cols-2 gap-4 mb-6">
             <button
               type="button"
-              className="flex items-center justify-center gap-2 bg-white border border-[#E6E0DA] hover:border-[#D4755B] rounded-lg py-3 transition-all"
+              className="flex items-center justify-center gap-2 bg-white border border-[#E6E0DA] hover:border-[#1B3A5C] rounded-lg py-3 transition-all"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -73,26 +73,26 @@ const SignUpPage: React.FC = () => {
                 <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
                 <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
               </svg>
-              <span className="font-manrope font-medium text-sm text-[#374151]">Google</span>
+              <span className="font-inter font-medium text-sm text-[#374151]">Google</span>
             </button>
 
             <button
               type="button"
-              className="flex items-center justify-center gap-2 bg-white border border-[#E6E0DA] hover:border-[#D4755B] rounded-lg py-3 transition-all"
+              className="flex items-center justify-center gap-2 bg-white border border-[#E6E0DA] hover:border-[#1B3A5C] rounded-lg py-3 transition-all"
             >
               <svg className="w-5 h-5" fill="#1877F2" viewBox="0 0 24 24">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
               </svg>
-              <span className="font-manrope font-medium text-sm text-[#374151]">Facebook</span>
+              <span className="font-inter font-medium text-sm text-[#374151]">Facebook</span>
             </button>
           </div>
 
           {/* Sign In Link */}
-          <p className="text-center font-manrope font-extralight text-sm text-[#64748B]">
+          <p className="text-center font-inter font-extralight text-sm text-[#64748B]">
             Already have an account?{' '}
             <Link
               to="/signin"
-              className="font-semibold text-[#D4755B] hover:text-[#C05621] transition-colors"
+              className="font-semibold text-[#1B3A5C] hover:text-[#C05621] transition-colors"
             >
               Sign In
             </Link>
@@ -103,7 +103,7 @@ const SignUpPage: React.FC = () => {
         <div className="text-center mt-6">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 font-manrope font-medium text-sm text-[#64748B] hover:text-[#D4755B] transition-colors"
+            className="inline-flex items-center gap-2 font-inter font-medium text-sm text-[#64748B] hover:text-[#1B3A5C] transition-colors"
           >
             <span className="material-icons text-base">arrow_back</span>
             <span>Back to Home</span>

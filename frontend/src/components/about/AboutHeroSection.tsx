@@ -20,7 +20,7 @@ const AboutHeroSection: React.FC = () => {
       {/* Content */}
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center max-w-[702px] px-8">
-          <h1 className="font-fraunces text-[56px] leading-[61.6px] text-[#F2EFE9] mb-6">
+          <h1 className="font-playfair text-[56px] leading-[61.6px] text-[#F2EFE9] mb-6">
             Redefining Real Estate with<br />
             <span className="italic">Intelligence & Elegance</span>
           </h1>
@@ -28,7 +28,7 @@ const AboutHeroSection: React.FC = () => {
           {/* Divider */}
           <div className="w-24 h-px bg-[rgba(242,239,233,0.4)] mx-auto mb-8" />
           
-          <p className="font-manrope font-extralight text-lg text-[rgba(242,239,233,0.9)] tracking-wide">
+          <p className="font-inter font-extralight text-lg text-[rgba(242,239,233,0.9)] tracking-wide">
             Where data-driven precision meets the art of living.
           </p>
         </div>

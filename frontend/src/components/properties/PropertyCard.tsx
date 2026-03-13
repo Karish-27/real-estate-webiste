@@ -45,7 +45,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* Badge */}
         {badge && (
           <div className={`absolute top-4 left-4 px-3 py-1.5 rounded text-white font-space-mono text-xs font-bold shadow-lg ${
-            badge === 'HOT' ? 'bg-[#D4755B]' :
+            badge === 'HOT' ? 'bg-[#1B3A5C]' :
             badge === 'SOLD' ? 'bg-gray-500' :
             badge === 'FOR RENT' ? 'bg-blue-500' :
             'bg-[#10B981]'
@@ -64,8 +64,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         >
           <span className={`material-icons text-xl transition-all ${
             isFavorite 
-              ? 'text-[#D4755B]' 
-              : 'text-[#6B7280] group-hover/fav:text-[#D4755B]'
+              ? 'text-[#1B3A5C]' 
+              : 'text-[#6B7280] group-hover/fav:text-[#1B3A5C]'
           }`}>
             {isFavorite ? 'favorite' : 'favorite_border'}
           </span>
@@ -76,25 +76,25 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
       <div className="p-5">
         {/* Price */}
         <div className="flex items-baseline gap-1 mb-2">
-          <span className="font-space-mono font-bold text-xl text-[#D4755B]">
+          <span className="font-space-mono font-bold text-xl text-[#1B3A5C]">
             ₹
           </span>
-          <span className="font-space-mono font-bold text-2xl text-[#D4755B]">
+          <span className="font-space-mono font-bold text-2xl text-[#1B3A5C]">
             {price}
           </span>
         </div>
 
         {/* Name */}
-        <h3 className="font-syne text-lg text-[#221410] mb-1">
+        <h3 className="font-playfair text-lg text-[#221410] mb-1">
           {name}
         </h3>
 
         {/* Location */}
         <div className="flex items-center gap-1 mb-4">
-          <span className="material-icons text-[#D4755B] text-sm">
+          <span className="material-icons text-[#1B3A5C] text-sm">
             location_on
           </span>
-          <span className="font-manrope font-extralight text-sm text-[#6B7280]">
+          <span className="font-inter font-extralight text-sm text-[#6B7280]">
             {location}
           </span>
         </div>
@@ -105,7 +105,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             <span className="material-icons text-[#6B7280] text-lg">
               bed
             </span>
-            <span className="font-manrope font-extralight text-sm text-[#221410]">
+            <span className="font-inter font-extralight text-sm text-[#221410]">
               {beds} Beds
             </span>
           </div>
@@ -113,7 +113,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             <span className="material-icons text-[#6B7280] text-lg">
               bathtub
             </span>
-            <span className="font-manrope font-extralight text-sm text-[#221410]">
+            <span className="font-inter font-extralight text-sm text-[#221410]">
               {baths} Baths
             </span>
           </div>
@@ -121,7 +121,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             <span className="material-icons text-[#6B7280] text-lg">
               square_foot
             </span>
-            <span className="font-manrope font-extralight text-sm text-[#221410]">
+            <span className="font-inter font-extralight text-sm text-[#221410]">
               {sqft.toLocaleString()} sqft
             </span>
           </div>
@@ -133,7 +133,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             {tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-[#F8F6F6] border border-[#E6E0DA] rounded-full font-manrope font-extralight text-xs text-[#6B7280] uppercase tracking-wide"
+                className="px-3 py-1 bg-[#F8F6F6] border border-[#E6E0DA] rounded-full font-inter font-extralight text-xs text-[#6B7280] uppercase tracking-wide"
               >
                 {tag}
               </span>
@@ -141,7 +141,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
           </div>
         )}
 
-        <button className="w-full mt-2 bg-transparent border border-[#D4755B] text-[#D4755B] font-manrope font-bold py-2 rounded-lg hover:bg-[#D4755B] hover:text-white transition-all">
+        <button className="w-full mt-2 bg-transparent border border-[#1B3A5C] text-[#1B3A5C] font-inter font-bold py-2 rounded-lg hover:bg-[#1B3A5C] hover:text-white transition-all">
           View Details
         </button>
       </div>

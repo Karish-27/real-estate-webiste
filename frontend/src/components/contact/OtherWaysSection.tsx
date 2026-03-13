@@ -42,10 +42,10 @@ const OtherWaysSection: React.FC = () => {
       <div className="max-w-[1280px] mx-auto px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-syne font-bold text-4xl text-[#221410] mb-4">
+          <h2 className="font-playfair font-bold text-4xl text-[#221410] mb-4">
             Other Ways to Connect
           </h2>
-          <p className="font-manrope text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
+          <p className="font-inter text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
             Need faster support? Try our instant messaging options.
           </p>
         </div>
@@ -59,18 +59,18 @@ const OtherWaysSection: React.FC = () => {
             >
               {/* Icon */}
               <div className={`w-16 h-16 ${method.bgColor} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                <span className="material-icons text-3xl text-[#D4755B]">
+                <span className="material-icons text-3xl text-[#1B3A5C]">
                   {method.icon}
                 </span>
               </div>
 
               {/* Title */}
-              <h3 className="font-syne font-bold text-xl text-[#221410] mb-3">
+              <h3 className="font-playfair font-bold text-xl text-[#221410] mb-3">
                 {method.title}
               </h3>
 
               {/* Description */}
-              <p className="font-manrope font-extralight text-sm text-[#4B5563] leading-relaxed mb-6">
+              <p className="font-inter font-extralight text-sm text-[#4B5563] leading-relaxed mb-6">
                 {method.description}
               </p>
 
@@ -79,7 +79,7 @@ const OtherWaysSection: React.FC = () => {
                 href={method.actionLink}
                 target={method.actionLink.startsWith('http') ? '_blank' : '_self'}
                 rel={method.actionLink.startsWith('http') ? 'noopener noreferrer' : ''}
-                className="inline-flex items-center gap-2 font-manrope font-bold text-sm text-[#D4755B] hover:text-[#C05621] transition-colors group"
+                className="inline-flex items-center gap-2 font-inter font-bold text-sm text-[#1B3A5C] hover:text-[#C05621] transition-colors group"
               >
                 <span>{method.action}</span>
                 <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">

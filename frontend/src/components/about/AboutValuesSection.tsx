@@ -25,10 +25,10 @@ const AboutValuesSection: React.FC = () => {
       <div className="max-w-[1280px] mx-auto px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="font-space-mono text-xs text-[#D4755B] uppercase tracking-[1.2px] mb-4">
+          <div className="font-space-mono text-xs text-[#1B3A5C] uppercase tracking-[1.2px] mb-4">
             Our Ethos
           </div>
-          <h2 className="font-syne text-4xl text-[#221410]">
+          <h2 className="font-playfair text-4xl text-[#221410]">
             Driven by Purpose
           </h2>
         </div>
@@ -42,16 +42,16 @@ const AboutValuesSection: React.FC = () => {
             >
               {/* Icon Circle */}
               <div className="w-16 h-16 bg-[rgba(236,70,19,0.1)] rounded-full flex items-center justify-center mx-auto mb-6">
-                <value.icon className="w-8 h-8 text-[#D4755B]" strokeWidth={1.5} />
+                <value.icon className="w-8 h-8 text-[#1B3A5C]" strokeWidth={1.5} />
               </div>
 
               {/* Title */}
-              <h3 className="font-syne text-xl text-[#221410] mb-4">
+              <h3 className="font-playfair text-xl text-[#221410] mb-4">
                 {value.title}
               </h3>
 
               {/* Description */}
-              <p className="font-manrope font-extralight text-sm leading-[22.75px] text-[#4b5563]">
+              <p className="font-inter font-extralight text-sm leading-[22.75px] text-[#4b5563]">
                 {value.description}
               </p>
             </div>

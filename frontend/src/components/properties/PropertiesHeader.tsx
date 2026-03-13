@@ -30,10 +30,10 @@ const PropertiesHeader: React.FC<PropertiesHeaderProps> = ({
         <div className="flex items-center justify-between">
           {/* Left - Title and Count */}
           <div>
-            <h1 className="font-syne text-3xl text-[#221410] mb-1">
+            <h1 className="font-playfair text-3xl text-[#221410] mb-1">
               All Properties
             </h1>
-            <p className="font-manrope font-extralight text-sm text-[#6B7280]">
+            <p className="font-inter font-extralight text-sm text-[#6B7280]">
               Showing {totalProperties} {totalProperties === 1 ? 'property' : 'properties'}
             </p>
           </div>
@@ -42,13 +42,13 @@ const PropertiesHeader: React.FC<PropertiesHeaderProps> = ({
           <div className="flex items-center gap-4">
             {/* Sort Dropdown */}
             <div className="flex items-center gap-2">
-              <span className="font-manrope font-extralight text-sm text-[#6B7280]">
+              <span className="font-inter font-extralight text-sm text-[#6B7280]">
                 Sort:
               </span>
               <select
                 value={sortBy}
                 onChange={(e) => handleSortChange(e.target.value)}
-                className="bg-white border border-[#E6E0DA] rounded-lg px-4 py-2 font-manrope text-sm text-[#221410] cursor-pointer focus:outline-none focus:border-[#D4755B] appearance-none pr-8 bg-no-repeat bg-right"
+                className="bg-white border border-[#E6E0DA] rounded-lg px-4 py-2 font-inter text-sm text-[#221410] cursor-pointer focus:outline-none focus:border-[#1B3A5C] appearance-none pr-8 bg-no-repeat bg-right"
                 style={{
                   backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23221410' d='M6 8L2 4h8z'/%3E%3C/svg%3E")`,
                   backgroundPosition: 'right 0.75rem center'
@@ -68,8 +68,8 @@ const PropertiesHeader: React.FC<PropertiesHeaderProps> = ({
                 onClick={() => handleViewChange('grid')}
                 className={`p-2 rounded transition-all ${
                   viewMode === 'grid'
-                    ? 'bg-white text-[#D4755B] shadow-sm'
-                    : 'text-[#6B7280] hover:text-[#D4755B]'
+                    ? 'bg-white text-[#1B3A5C] shadow-sm'
+                    : 'text-[#6B7280] hover:text-[#1B3A5C]'
                 }`}
                 title="Grid View"
               >
@@ -79,8 +79,8 @@ const PropertiesHeader: React.FC<PropertiesHeaderProps> = ({
                 onClick={() => handleViewChange('list')}
                 className={`p-2 rounded transition-all ${
                   viewMode === 'list'
-                    ? 'bg-white text-[#D4755B] shadow-sm'
-                    : 'text-[#6B7280] hover:text-[#D4755B]'
+                    ? 'bg-white text-[#1B3A5C] shadow-sm'
+                    : 'text-[#6B7280] hover:text-[#1B3A5C]'
                 }`}
                 title="List View"
               >

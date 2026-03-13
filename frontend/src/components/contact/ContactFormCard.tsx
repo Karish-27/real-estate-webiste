@@ -54,10 +54,10 @@ const ContactFormCard: React.FC = () => {
     <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-sm">
       {/* Card Header */}
       <div className="mb-8">
-        <h2 className="font-syne font-bold text-2xl text-[#221410] mb-2">
+        <h2 className="font-playfair font-bold text-2xl text-[#221410] mb-2">
           Send Us a Message
         </h2>
-        <p className="font-manrope font-extralight text-sm text-[#4B5563]">
+        <p className="font-inter font-extralight text-sm text-[#4B5563]">
           Fill in the form below and our team will get back to you within 24 hours.
         </p>
       </div>
@@ -67,7 +67,7 @@ const ContactFormCard: React.FC = () => {
         {/* First Name & Last Name Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+            <label className="block font-inter font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
               First Name
             </label>
             <input
@@ -76,13 +76,13 @@ const ContactFormCard: React.FC = () => {
               value={formData.firstName}
               onChange={handleInputChange}
               placeholder="John"
-              className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+              className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-inter font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#1B3A5C] transition-colors"
               required
             />
           </div>
 
           <div>
-            <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+            <label className="block font-inter font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
               Last Name
             </label>
             <input
@@ -91,7 +91,7 @@ const ContactFormCard: React.FC = () => {
               value={formData.lastName}
               onChange={handleInputChange}
               placeholder="Doe"
-              className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+              className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-inter font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#1B3A5C] transition-colors"
               required
             />
           </div>
@@ -99,7 +99,7 @@ const ContactFormCard: React.FC = () => {
 
         {/* Email */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-inter font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
             Email
           </label>
           <input
@@ -108,14 +108,14 @@ const ContactFormCard: React.FC = () => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="john.doe@example.com"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-inter font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#1B3A5C] transition-colors"
             required
           />
         </div>
 
         {/* Phone Number */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-inter font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
             Phone Number
           </label>
           <input
@@ -124,14 +124,14 @@ const ContactFormCard: React.FC = () => {
             value={formData.phoneNumber}
             onChange={handleInputChange}
             placeholder="+91 98765 43210"
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors"
+            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-inter font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#1B3A5C] transition-colors"
             required
           />
         </div>
 
         {/* Message */}
         <div>
-          <label className="block font-manrope font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
+          <label className="block font-inter font-extralight text-xs text-[#64748B] uppercase tracking-wider mb-2">
             Message
           </label>
           <textarea
@@ -140,7 +140,7 @@ const ContactFormCard: React.FC = () => {
             onChange={handleInputChange}
             placeholder="Tell us about your inquiry..."
             rows={5}
-            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-manrope font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#D4755B] transition-colors resize-none"
+            className="w-full bg-[#F5F1E8] border border-[#E6E0DA] rounded-lg px-4 py-3 font-inter font-extralight text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#1B3A5C] transition-colors resize-none"
             required
           />
         </div>
@@ -149,7 +149,7 @@ const ContactFormCard: React.FC = () => {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#D4755B] hover:bg-[#C05621] disabled:opacity-60 disabled:cursor-not-allowed text-white font-manrope font-bold text-base py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+          className="w-full bg-[#1B3A5C] hover:bg-[#C05621] disabled:opacity-60 disabled:cursor-not-allowed text-white font-inter font-bold text-base py-3.5 rounded-xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
         >
           {loading ? (
             <>
@@ -165,13 +165,13 @@ const ContactFormCard: React.FC = () => {
         {status === 'success' && (
           <div className="flex items-center gap-2 bg-green-50 border border-green-200 rounded-lg px-4 py-3">
             <CheckCircle className="w-5 h-5 text-green-600 shrink-0" />
-            <p className="font-manrope text-sm text-green-700">{statusMessage}</p>
+            <p className="font-inter text-sm text-green-700">{statusMessage}</p>
           </div>
         )}
         {status === 'error' && (
           <div className="flex items-center gap-2 bg-red-50 border border-red-200 rounded-lg px-4 py-3">
             <AlertCircle className="w-5 h-5 text-red-600 shrink-0" />
-            <p className="font-manrope text-sm text-red-700">{statusMessage}</p>
+            <p className="font-inter text-sm text-red-700">{statusMessage}</p>
           </div>
         )}
       </form>
