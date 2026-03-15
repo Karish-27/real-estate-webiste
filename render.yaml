@@ -14,7 +14,7 @@ services:
       - key: PORT
         value: 10000
       - key: BACKEND_URL
-        value: https://real-estate-website-backend-zfu7.onrender.com
+        value: https://real-estate-webiste.onrender.com
       - key: WEBSITE_URL
         value: https://real-estate-webiste-swart.vercel.app
       - key: MONGO_URI

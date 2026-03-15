@@ -3,7 +3,7 @@
   "outputDirectory": "frontend/dist",
   "build": {
     "env": {
-      "VITE_API_BASE_URL": "https://real-estate-website-backend-zfu7.onrender.com",
+      "VITE_API_BASE_URL": "https://real-estate-webiste.onrender.com",
       "VITE_ENABLE_AI_HUB": "true"
     }
   },

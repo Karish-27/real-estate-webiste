@@ -85,7 +85,7 @@ const allowedOrigins = [
   'https://buildestate.vercel.app',
   'https://real-estate-webiste-swart.vercel.app',
   'https://real-estate-website-admin.onrender.com',
-  'https://real-estate-website-backend-zfu7.onrender.com',
+  'https://real-estate-webiste.onrender.com',
 ];
 if (process.env.WEBSITE_URL) allowedOrigins.push(process.env.WEBSITE_URL);
 
