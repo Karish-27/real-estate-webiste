@@ -89,12 +89,24 @@ const allowedOrigins = [
 ];
 if (process.env.WEBSITE_URL) allowedOrigins.push(process.env.WEBSITE_URL);
 
-app.use(cors({
-  origin: allowedOrigins,
+const corsOptions = {
+  origin: (origin, callback) => {
+    // Allow requests with no origin (mobile apps, curl, Postman)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error(`CORS: origin ${origin} not allowed`));
+    }
+  },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'], // Added HEAD
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'X-Github-Key', 'X-Firecrawl-Key']
-}));
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'X-Github-Key', 'X-Firecrawl-Key'],
+  optionsSuccessStatus: 200,
+};
+
+// Handle preflight requests for all routes
+app.options('*', cors(corsOptions));
+app.use(cors(corsOptions));
 
 // Database connection
 connectdb().then(() => {
