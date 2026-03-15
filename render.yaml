@@ -4,8 +4,8 @@ services:
     env: node
     region: singapore
     plan: free
-    rootDir: .
-    buildCommand: npm run render-build
+    rootDir: backend
+    buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /status
     envVars:
