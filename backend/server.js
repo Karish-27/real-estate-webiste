@@ -84,6 +84,7 @@ app.use(cors({
     'http://localhost:5174',
     'http://localhost:5173',
     'https://buildestate.vercel.app',
+    'https://real-estate-webiste-swart.vercel.app',
     'https://real-estate-website-admin.onrender.com',
     'https://real-estate-website-backend-zfu7.onrender.com',
   ],
