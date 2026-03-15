@@ -127,6 +127,9 @@ app.use('/api', propertyRoutes);
 
 
 app.use((err, req, res, next) => {
+  const origin = req.headers.origin;
+  if (origin) res.setHeader('Access-Control-Allow-Origin', origin);
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
   console.error('Error:', err);
   const statusCode = err.status || 500;
   res.status(statusCode).json({
