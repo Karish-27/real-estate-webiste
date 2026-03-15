@@ -12,6 +12,7 @@ import PropertyLocation from '../components/property-details/PropertyLocation';
 import ScheduleViewingCard from '../components/property-details/ScheduleViewingCard';
 import { propertiesAPI } from '../services/api';
 import { useSEO } from '../hooks/useSEO';
+import { DUMMY_PROPERTIES } from '../data/dummyProperties';
 import StructuredData from '../components/common/StructuredData';
 
 interface PropertyData {
@@ -59,7 +60,12 @@ const PropertyDetailsPage: React.FC = () => {
         }
       } catch (err: any) {
         console.error('Failed to fetch property:', err);
-        setError('Failed to load property details. Please try again.');
+        const dummy = DUMMY_PROPERTIES.find(p => p._id === id);
+        if (dummy) {
+          setProperty(dummy);
+        } else {
+          setError('Failed to load property details. Please try again.');
+        }
       } finally {
         setLoading(false);
       }
