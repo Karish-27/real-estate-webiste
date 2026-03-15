@@ -3,7 +3,7 @@ import mainAboutImage from '../../images/Main about image.jpg';
 
 const AboutHeroSection: React.FC = () => {
   return (
-    <section className="relative bg-[#C05621] h-[480px] overflow-hidden">
+    <section className="relative bg-[#B5572B] h-[480px] overflow-hidden">
       {/* Background Pattern */}
       <div 
         className="absolute inset-0 opacity-20 mix-blend-overlay"

@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useAuth } from '../../contexts/AuthContext';
 
 const CTASection: React.FC = () => {
+  const { isAuthenticated } = useAuth();
   return (
-    <section className="bg-[#EC4613] py-24 relative overflow-hidden">
+    <section className="bg-[#B5572B] py-24 relative overflow-hidden">
       {/* Background Pattern */}
-        <img 
-          src="/src/images/Abstract architectural texture with light and shadow.png" 
+        <img
+          src="/src/images/Abstract architectural texture with light and shadow.png"
           alt="Background Texture"
           className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
         />
@@ -19,12 +22,12 @@ const CTASection: React.FC = () => {
           Join thousands of satisfied homeowners who found their perfect property with BuildEstate's AI-powered platform.
         </p>
         <div className="flex gap-4 justify-center">
-          <button className="bg-white text-[#C05621] font-inter font-bold text-lg px-10 py-4 rounded-xl shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all">
+          <Link to={isAuthenticated ? "/properties" : "/signup"} className="bg-white text-[#B5572B] font-inter font-bold text-lg px-10 py-4 rounded-xl shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] hover:shadow-2xl transition-all">
             Get Started
-          </button>
-          <button className="border-2 border-white text-white font-inter font-bold text-lg px-10 py-4 rounded-xl hover:bg-white hover:text-[#C05621] transition-all">
+          </Link>
+          <Link to="/contact" className="border-2 border-white text-white font-inter font-bold text-lg px-10 py-4 rounded-xl hover:bg-white hover:text-[#B5572B] transition-all">
             Schedule a Demo
-          </button>
+          </Link>
         </div>
       </div>
     </section>
