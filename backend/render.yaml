@@ -2,12 +2,38 @@ services:
   - type: web
     name: real-estate-backend
     env: node
+    region: singapore
+    plan: free
+    rootDir: .
     buildCommand: npm run render-build
     startCommand: npm start
+    healthCheckPath: /status
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
         value: 10000
-    # Health check endpoint
-    healthCheckPath: /status
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: EMAIL
+        sync: false
+      - key: BREVO_API_KEY
+        sync: false
+      - key: IMAGEKIT_PUBLIC_KEY
+        sync: false
+      - key: IMAGEKIT_PRIVATE_KEY
+        sync: false
+      - key: IMAGEKIT_URL_ENDPOINT
+        sync: false
+      - key: FIRECRAWL_API_KEY
+        sync: false
+      - key: GITHUB_MODELS_API_KEY
+        sync: false
+      - key: WEBSITE_URL
+        value: https://real-estate-webiste-swart.vercel.app

@@ -78,16 +78,19 @@ app.use(trackAPIStats);
 
 
 // CORS Configuration
+const allowedOrigins = [
+  'http://localhost:4000',
+  'http://localhost:5174',
+  'http://localhost:5173',
+  'https://buildestate.vercel.app',
+  'https://real-estate-webiste-swart.vercel.app',
+  'https://real-estate-website-admin.onrender.com',
+  'https://real-estate-website-backend-zfu7.onrender.com',
+];
+if (process.env.WEBSITE_URL) allowedOrigins.push(process.env.WEBSITE_URL);
+
 app.use(cors({
-  origin: [
-    'http://localhost:4000',
-    'http://localhost:5174',
-    'http://localhost:5173',
-    'https://buildestate.vercel.app',
-    'https://real-estate-webiste-swart.vercel.app',
-    'https://real-estate-website-admin.onrender.com',
-    'https://real-estate-website-backend-zfu7.onrender.com',
-  ],
+  origin: allowedOrigins,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'], // Added HEAD
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'X-Github-Key', 'X-Firecrawl-Key']
