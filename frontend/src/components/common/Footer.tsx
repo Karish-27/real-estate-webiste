@@ -11,26 +11,28 @@ const NestLogo: React.FC = () => (
   </svg>
 );
 
-const IconFacebook  = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>;
-const IconX         = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>;
-const IconInstagram = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>;
-const IconLinkedIn  = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>;
-const IconYouTube   = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>;
+const IconGitHub   = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>;
+const IconBehance  = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 11.5c.828 0 1.5-.672 1.5-1.5S8.328 8.5 7.5 8.5H4v3h3.5zm.5 2H4v3.5h4c.828 0 1.5-.672 1.5-1.5v-.5c0-.828-.672-1.5-1.5-1.5zM0 6h11.5c2.485 0 4.5 2.015 4.5 4.5 0 1.38-.622 2.614-1.6 3.45C15.47 14.82 16 16.09 16 17.5c0 2.485-2.015 4.5-4.5 4.5H0V6zm15.5 2.5h6v1h-6v-1zm.75 4c-.414 0-.75.336-.75.75h5c0-1.519-1.231-2.75-2.75-2.75-1.519 0-2.75 1.231-2.75 2.75 0 1.519 1.231 2.75 2.75 2.75.88 0 1.661-.413 2.154-1.053l-.898-.523A1.745 1.745 0 0 1 18.5 15c-.698 0-1.297-.41-1.582-1h4.064A2.745 2.745 0 0 0 21 13.25c0-1.519-1.231-2.75-2.75-2.75z"/></svg>;
+const IconDribbble = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.605 4.61a8.502 8.502 0 0 1 1.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 0 0-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0 1 12 3.475zm-3.633.803a53.896 53.896 0 0 1 3.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 0 1 4.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 0 1-2.19-5.705zM12 20.547a8.482 8.482 0 0 1-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.32 35.32 0 0 1 1.823 6.475 8.4 8.4 0 0 1-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 0 1-3.655 5.715z"/></svg>;
+const IconLinkedIn = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>;
 
 const SOCIAL_LINKS = [
-  { Icon: IconFacebook,  href: 'https://facebook.com',  label: 'Facebook' },
-  { Icon: IconX,         href: 'https://twitter.com',   label: 'X (Twitter)' },
-  { Icon: IconInstagram, href: 'https://instagram.com', label: 'Instagram' },
-  { Icon: IconLinkedIn,  href: 'https://linkedin.com',  label: 'LinkedIn' },
-  { Icon: IconYouTube,   href: 'https://youtube.com',   label: 'YouTube' },
+  { Icon: IconGitHub,   href: 'https://github.com/Karish-27',   label: 'GitHub' },
+  { Icon: IconBehance,  href: 'https://www.behance.net/krutikp',  label: 'Behance' },
+  { Icon: IconDribbble, href: 'https://dribbble.com/Krutik_Parmar', label: 'Dribbble' },
+  { Icon: IconLinkedIn, href: 'https://www.linkedin.com/in/karishma-kumavat-480891241', label: 'LinkedIn' },
 ];
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!email) return;
+    setSubscribed(true);
     setEmail('');
+    setTimeout(() => setSubscribed(false), 4000);
   };
 
   return (
@@ -89,7 +91,7 @@ const Footer: React.FC = () => {
                 { to: '/ai-hub',     label: 'Market Insights' },
                 { to: '/about',      label: 'About Us' },
                 { to: '/contact',    label: 'Contact' },
-                { to: '#',           label: 'Careers' },
+                // { to: '#',           label: 'Careers' },
               ].map(({ to, label }) => (
                 <li key={label}>
                   <Link
@@ -119,19 +121,19 @@ const Footer: React.FC = () => {
                   style={{ color: 'rgba(255,255,255,0.65)' }}
                 >
                   <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.5)' }} />
-                  <span>502, Devpath Building,<br />Ashram Road, Ahmedabad</span>
+                  <span>14, Shapath Complex,<br />S.G. Highway, Ahmedabad</span>
                 </a>
               </li>
               <li>
                 <a href="tel:+919876543210" className="flex items-center gap-3 text-sm transition-colors duration-200" style={{ color: 'rgba(255,255,255,0.65)' }}>
                   <Phone className="w-4 h-4 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.5)' }} />
-                  +91 98765 43210
+                  +91 9512490729
                 </a>
               </li>
               <li>
                 <a href="mailto:hello@nestprime.in" className="flex items-center gap-3 text-sm transition-colors duration-200" style={{ color: 'rgba(255,255,255,0.65)' }}>
                   <Mail className="w-4 h-4 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.5)' }} />
-                  hello@nestprime.in
+                 karishmakumavat27@gmail.com
                 </a>
               </li>
             </ul>
@@ -143,32 +145,47 @@ const Footer: React.FC = () => {
             <p className="text-sm leading-6 mb-5" style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>
               Market trends, new listings, and expert insights - delivered to your inbox.
             </p>
-            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email address"
-                required
-                className="w-full text-sm px-4 py-3 rounded-lg outline-none transition-colors duration-200"
-                style={{
-                  background:  'rgba(255,255,255,0.1)',
-                  border:      '1px solid rgba(255,255,255,0.2)',
-                  color:       '#FFFFFF',
-                }}
-                onFocus={(e)  => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.5)'; }}
-                onBlur={(e)   => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.2)'; }}
-              />
-              <button
-                type="submit"
-                className="w-full text-sm py-3 rounded-lg font-semibold transition-all duration-200"
-                style={{ background: '#B5572B', color: '#FFFFFF' }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#9E4A22'; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B5572B'; }}
+            {subscribed ? (
+              <div
+                className="flex flex-col items-center justify-center gap-2 py-5 px-4 rounded-lg text-center"
+                style={{ background: 'rgba(34,197,94,0.12)', border: '1px solid rgba(34,197,94,0.3)' }}
               >
-                Subscribe
-              </button>
-            </form>
+                <div className="w-9 h-9 rounded-full flex items-center justify-center mb-1" style={{ background: 'rgba(34,197,94,0.2)' }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22C55E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <p className="text-sm font-semibold" style={{ color: '#22C55E' }}>You're subscribed!</p>
+                <p className="text-xs" style={{ color: 'rgba(255,255,255,0.5)' }}>Thanks for joining. Check your inbox soon.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email address"
+                  required
+                  className="w-full text-sm px-4 py-3 rounded-lg outline-none transition-colors duration-200"
+                  style={{
+                    background: 'rgba(255,255,255,0.1)',
+                    border:     '1px solid rgba(255,255,255,0.2)',
+                    color:      '#FFFFFF',
+                  }}
+                  onFocus={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.5)'; }}
+                  onBlur={(e)  => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.2)'; }}
+                />
+                <button
+                  type="submit"
+                  className="w-full text-sm py-3 rounded-lg font-semibold transition-all duration-200"
+                  style={{ background: '#B5572B', color: '#FFFFFF' }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = '#9E4A22'; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#B5572B'; }}
+                >
+                  Subscribe
+                </button>
+              </form>
+            )}
             <p className="text-xs mt-3" style={{ color: 'rgba(255,255,255,0.35)' }}>No spam. Unsubscribe anytime.</p>
           </div>
         </div>
