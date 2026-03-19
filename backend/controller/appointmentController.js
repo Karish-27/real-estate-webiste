@@ -235,7 +235,7 @@ export const updateAppointmentStatus = async (req, res) => {
   }
 };
 
-// Schedule viewing — supports both authenticated and guest bookings
+// Schedule viewing - supports both authenticated and guest bookings
 export const scheduleViewing = async (req, res) => {
   try {
     const { propertyId, date, time, notes, name, email, phone, message } = req.body;
@@ -291,7 +291,7 @@ export const scheduleViewing = async (req, res) => {
       }
     }
 
-    // Build appointment data — link user if logged in, else store guest info
+    // Build appointment data - link user if logged in, else store guest info
     const appointmentData = {
       propertyId,
       date,
@@ -305,7 +305,7 @@ export const scheduleViewing = async (req, res) => {
     const appointment = new Appointment(appointmentData);
     await appointment.save();
 
-    // Populate what we can — userId may not exist for guests
+    // Populate what we can - userId may not exist for guests
     const populateFields = ['propertyId'];
     if (userId) populateFields.push('userId');
     await appointment.populate(populateFields);

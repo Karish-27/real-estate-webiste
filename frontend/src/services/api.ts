@@ -39,7 +39,7 @@ apiClient.interceptors.response.use(
 );
 
 // ═══════════════════════════════════════════════════════════
-// API Endpoints — aligned with backend routes
+// API Endpoints - aligned with backend routes
 // ═══════════════════════════════════════════════════════════
 
 // User Authentication
@@ -66,7 +66,7 @@ export const userAPI = {
     apiClient.get('/users/me'),
 };
 
-// Properties (CRUD — admin-managed listings)
+// Properties (CRUD - admin-managed listings)
 export const propertiesAPI = {
   getAll: () =>
     apiClient.get('/products/list'),

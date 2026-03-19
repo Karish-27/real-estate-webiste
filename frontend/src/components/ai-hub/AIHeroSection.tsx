@@ -174,7 +174,7 @@ const AIHeroSection: React.FC<AIHeroSectionProps> = ({ onSearch, loading, extern
             <div className="flex items-center gap-3 bg-emerald-50 border border-emerald-200 shadow-sm rounded-xl px-5 py-3">
               <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
               <p className="font-manrope text-sm font-medium text-emerald-800 flex-1">
-                Your API keys are active — AI searches use your own quota.
+                Your API keys are active - AI searches use your own quota.
               </p>
               <button
                 onClick={() => setShowKeyModal(true)}
@@ -187,7 +187,7 @@ const AIHeroSection: React.FC<AIHeroSectionProps> = ({ onSearch, loading, extern
             <div className="flex items-center gap-3 bg-amber-50 border border-amber-200 shadow-sm rounded-xl px-5 py-3">
               <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0" />
               <p className="font-manrope text-sm font-medium text-amber-800 flex-1">
-                Add your <strong className="text-amber-900 font-bold">free</strong> GitHub Models &amp; Firecrawl keys — use your own quota.
+                Add your <strong className="text-amber-900 font-bold">free</strong> GitHub Models &amp; Firecrawl keys - use your own quota.
               </p>
               <button
                 onClick={() => setShowKeyModal(true)}
@@ -221,7 +221,7 @@ const AIHeroSection: React.FC<AIHeroSectionProps> = ({ onSearch, loading, extern
                     onFocus={() => setShowSuggestions(true)}
                     onKeyDown={handleCityKeyDown}
                     className="flex-1 bg-transparent font-manrope text-base text-[#221410] outline-none placeholder:text-[#9CA3AF] placeholder:font-light"
-                    placeholder="Enter city — e.g. Mumbai, Pune, Bangalore…"
+                    placeholder="Enter city - e.g. Mumbai, Pune, Bangalore…"
                     autoComplete="off"
                     required
                   />
@@ -395,7 +395,7 @@ const AIHeroSection: React.FC<AIHeroSectionProps> = ({ onSearch, loading, extern
             {loading && (
               <p className="flex items-center justify-center gap-2 font-manrope text-sm text-[#6B7280] font-medium mt-4 animate-pulse">
                 <Sparkles className="w-4 h-4 text-[#D4755B]" />
-                Scraping live data & running AI analysis — this may take 15-30s
+                Scraping live data & running AI analysis - this may take 15-30s
               </p>
             )}
           </form>

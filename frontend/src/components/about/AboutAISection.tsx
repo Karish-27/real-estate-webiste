@@ -36,9 +36,9 @@ const AboutAISection: React.FC = () => {
 
             {/* Description */}
             <p className="font-inter font-extralight text-lg leading-[29.25px] text-[#4b5563] mb-8">
-              Our proprietary algorithms analyze millions of data points—from sun
+              Our proprietary algorithms analyze millions of data points-from sun
               patterns and neighborhood noise levels to architectural styles and
-              historical value trends—to present you with opportunities others
+              historical value trends-to present you with opportunities others
               miss.
             </p>
 

@@ -75,7 +75,7 @@ const AIAnalysisPanel: React.FC<Props> = ({ analysis, loading, error, city }) =>
           <div>
             <h2 className="font-syne text-3xl font-bold text-[#221410] mb-1">AI Market Analysis</h2>
             <p className="font-manrope text-[15px] text-[#6B7280]">
-              Powered by Advanced AI — Tailored insights for {city}
+              Powered by Advanced AI - Tailored insights for {city}
             </p>
           </div>
         </div>

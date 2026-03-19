@@ -76,7 +76,7 @@ const App = () => {
       <AuthProvider>
         <AppLayout />
 
-        {/* Toast Notifications — Sonner */}
+        {/* Toast Notifications - Sonner */}
         <Toaster
           position="top-right"
           richColors

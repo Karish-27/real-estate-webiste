@@ -84,7 +84,7 @@ const AIApiKeyModal: React.FC<AIApiKeyModalProps> = ({ isOpen, onClose, onKeysCh
             </div>
             <div>
               <h2 className="font-syne font-bold text-white text-lg">Your API Keys</h2>
-              <p className="font-manrope text-xs text-white/40">Saved in your browser only — never sent to our servers.</p>
+              <p className="font-manrope text-xs text-white/40">Saved in your browser only - never sent to our servers.</p>
             </div>
           </div>
           <button onClick={onClose} className="text-white/40 hover:text-white transition-colors">

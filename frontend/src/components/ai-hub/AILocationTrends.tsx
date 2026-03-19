@@ -82,7 +82,7 @@ const AILocationTrends: React.FC<Props> = ({
           </div>
           <div>
             <h2 className="font-syne text-3xl font-bold text-[#221410] mb-1">
-              Location Trends — {city}
+              Location Trends - {city}
             </h2>
             <p className="font-manrope text-[15px] text-[#6B7280]">
               Market data from real listings analyzed by AI
@@ -127,7 +127,7 @@ const AILocationTrends: React.FC<Props> = ({
                       </td>
                       <td className="text-right px-8 py-5">
                         <span className="font-space-mono text-[15px] text-[#4B5563] font-medium">
-                          ₹{loc.price_per_sqft ? Number(loc.price_per_sqft).toLocaleString('en-IN') : '—'}
+                          ₹{loc.price_per_sqft ? Number(loc.price_per_sqft).toLocaleString('en-IN') : '-'}
                         </span>
                       </td>
                       <td className="text-right px-8 py-5">
@@ -137,14 +137,14 @@ const AILocationTrends: React.FC<Props> = ({
                             {loc.percent_increase}%
                           </span>
                         ) : (
-                          <span className="font-space-mono text-[15px] text-[#9CA3AF]">—</span>
+                          <span className="font-space-mono text-[15px] text-[#9CA3AF]">-</span>
                         )}
                       </td>
                       <td className="text-right px-8 py-5">
                         <span className="font-space-mono text-[15px] text-[#4B5563] font-medium">
                           {loc.rental_yield && Number(loc.rental_yield) !== 0
                             ? `${loc.rental_yield}%`
-                            : '—'}
+                            : '-'}
                         </span>
                       </td>
                     </tr>
@@ -206,7 +206,7 @@ const AILocationTrends: React.FC<Props> = ({
                             <span className="font-manrope font-semibold text-[#221410] text-[15px]">
                               {trend.price_per_sqft
                                 ? `₹${Number(trend.price_per_sqft).toLocaleString('en-IN')}`
-                                : '—'}
+                                : '-'}
                             </span>
                           </div>
                           <div className="bg-white rounded-lg border border-[#E6E0DA]/50 p-3 text-center">
@@ -219,7 +219,7 @@ const AILocationTrends: React.FC<Props> = ({
                               }`}>
                               {trend.yearly_change_pct && Number(trend.yearly_change_pct) !== 0
                                 ? `${trend.yearly_change_pct}%`
-                                : '—'}
+                                : '-'}
                             </span>
                           </div>
                           <div className="bg-white rounded-lg border border-[#E6E0DA]/50 p-3 text-center">
@@ -229,7 +229,7 @@ const AILocationTrends: React.FC<Props> = ({
                             <span className="font-manrope font-semibold text-[#221410] text-[15px]">
                               {trend.rental_yield_pct && Number(trend.rental_yield_pct) !== 0
                                 ? `${trend.rental_yield_pct}%`
-                                : '—'}
+                                : '-'}
                             </span>
                           </div>
                         </div>

@@ -49,7 +49,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex">
-      {/* Left Panel — Dark Branding */}
+      {/* Left Panel - Dark Branding */}
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
@@ -89,7 +89,7 @@ const Login = () => {
             Portfolio
           </h1>
           <p className="text-[#9CA3AF] text-base leading-relaxed max-w-xs">
-            A powerful admin dashboard to manage properties, appointments, and clients — all in one place.
+            A powerful admin dashboard to manage properties, appointments, and clients - all in one place.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ const Login = () => {
         </div>
       </motion.div>
 
-      {/* Right Panel — Login Form */}
+      {/* Right Panel - Login Form */}
       <motion.div
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}

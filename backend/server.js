@@ -70,7 +70,7 @@ app.use(helmet({
 }));
 app.use(compression());
 
-// Middleware — 500kb is plenty; 50mb was dangerously large
+// Middleware - 500kb is plenty; 50mb was dangerously large
 app.use(express.json({ limit: '500kb' }));
 app.use(express.urlencoded({ extended: true, limit: '500kb' }));
 

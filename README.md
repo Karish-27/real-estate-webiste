@@ -10,7 +10,7 @@
 
 <br/>
 
-<p><strong>A full-stack real estate platform that scrapes live property data from 99acres.com using Firecrawl, analyzes it with GPT-4.1, and serves filtered results — all with user-owned API keys.</strong></p>
+<p><strong>A full-stack real estate platform that scrapes live property data from 99acres.com using Firecrawl, analyzes it with GPT-4.1, and serves filtered results - all with user-owned API keys.</strong></p>
 
 <br/>
 
@@ -81,13 +81,13 @@ Most real-estate aggregators show you generic listings. BuildEstate is different
 
 | Problem | BuildEstate Solution |
 |---|---|
-| Generic search results with no real filtering | **Deterministic 99acres URLs** — city ID + property-type slug + budget index → pre-filtered pages |
-| No AI intelligence in traditional portals | **GPT-4.1 analysis** — best-value picks, investment tips, market comparison |
-| API costs borne by the developer | **User-owned API keys** — users bring their own free GitHub Models + Firecrawl keys |
-| Scraping returns empty/broken data | **Smart scraping via scrapeUrl + JSON format** — full browser render → LLM extraction |
-| Search breaks on proxy/rate errors | **Auto-retry with exponential backoff** — proxy → rate-limit → server errors all handled |
+| Generic search results with no real filtering | **Deterministic 99acres URLs** - city ID + property-type slug + budget index → pre-filtered pages |
+| No AI intelligence in traditional portals | **GPT-4.1 analysis** - best-value picks, investment tips, market comparison |
+| API costs borne by the developer | **User-owned API keys** - users bring their own free GitHub Models + Firecrawl keys |
+| Scraping returns empty/broken data | **Smart scraping via scrapeUrl + JSON format** - full browser render → LLM extraction |
+| Search breaks on proxy/rate errors | **Auto-retry with exponential backoff** - proxy → rate-limit → server errors all handled |
 
-> **TL;DR** — This is not another property listing site. It's an AI-first platform that turns raw web data into actionable real estate insights.
+> **TL;DR** - This is not another property listing site. It's an AI-first platform that turns raw web data into actionable real estate insights.
 
 <br/>
 
@@ -153,20 +153,20 @@ Budget index:      50 Lakhs → getBudgetMaxIndex(0.5) → 7
 https://www.99acres.com/search/property/buy/independent-house/ahmedabad?city=45&budget_max=7
 ```
 
-This means the scraper hits a page that **already shows filtered results** — no wasted tokens parsing irrelevant listings.
+This means the scraper hits a page that **already shows filtered results** - no wasted tokens parsing irrelevant listings.
 
 ### Supported Coverage
 
 | Category | Coverage |
 |---|---|
-| 🏙️ Cities | 30+ — Mumbai, Delhi, Bangalore, Pune, Chennai, Hyderabad, Ahmedabad, Kolkata, Jaipur, Lucknow, and more |
+| 🏙️ Cities | 30+ - Mumbai, Delhi, Bangalore, Pune, Chennai, Hyderabad, Ahmedabad, Kolkata, Jaipur, Lucknow, and more |
 | 🏠 Property Types | Flat, House, Villa, Plot, Penthouse, Studio, Commercial |
 | 💰 Budget Range | ₹5 Lakhs → ₹25+ Crores (17 budget tiers mapped to 99acres indices) |
 | 🔄 Retry Logic | Auto-retry on proxy failures, rate limits (429), and server errors (502/503) |
 
 ### 🔑 User-Owned API Keys
 
-Users provide their **own free keys** in the browser. Keys are stored in localStorage only — never on the server.
+Users provide their **own free keys** in the browser. Keys are stored in localStorage only - never on the server.
 
 ```
 User's browser (localStorage)
@@ -206,12 +206,12 @@ User's browser (localStorage)
 
 | Feature | Description |
 | :-----: | :--- |
-| 🔎 | Advanced filter sidebar — price, type, location, area, amenities |
+| 🔎 | Advanced filter sidebar - price, type, location, area, amenities |
 | 🖼️ | Multi-image gallery delivered via ImageKit CDN |
-| 📅 | Appointment booking — works for both guest and authenticated users |
+| 📅 | Appointment booking - works for both guest and authenticated users |
 | 🔐 | JWT authentication with bcrypt hashing + email-based password reset |
 | 🎨 | Fluid page transitions powered by Framer Motion |
-| 🔍 | SEO-optimized — structured data, sitemap, robots.txt, per-page meta tags |
+| 🔍 | SEO-optimized - structured data, sitemap, robots.txt, per-page meta tags |
 
 </div>
 
@@ -219,7 +219,7 @@ User's browser (localStorage)
 
 ### 📊 Admin Dashboard
 
-> Full control — manage listings, track appointments, monitor analytics, and upload images with drag-and-drop.
+> Full control - manage listings, track appointments, monitor analytics, and upload images with drag-and-drop.
 
 <div align="center">
 
@@ -346,7 +346,7 @@ NODE_ENV=development
 # MongoDB Atlas
 MONGO_URI=mongodb+srv://<user>:<pass>@<cluster>.mongodb.net/?retryWrites=true&w=majority
 
-# JWT — generate with: openssl rand -hex 32
+# JWT - generate with: openssl rand -hex 32
 JWT_SECRET=your_jwt_secret_here
 
 # Brevo SMTP
@@ -643,7 +643,7 @@ See also: [Code of Conduct](CODE_OF_CONDUCT.md) · [Security Policy](SECURITY.md
 
 ## 📝 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
 <br/>
 

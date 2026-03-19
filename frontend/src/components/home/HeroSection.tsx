@@ -12,91 +12,6 @@ const item = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: 'easeOut' as const } },
 };
 
-/* ── Day-time cityscape illustration ── */
-const CityIllustration: React.FC = () => (
-  <svg viewBox="0 0 480 280" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: '100%' }}>
-    <defs>
-      <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%"   stopColor="#D6E8F5"/>
-        <stop offset="100%" stopColor="#EEF5FA"/>
-      </linearGradient>
-      <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%"   stopColor="#E8E6E0"/>
-        <stop offset="100%" stopColor="#D8D5CC"/>
-      </linearGradient>
-    </defs>
-    {/* Sky */}
-    <rect width="480" height="280" fill="url(#sky)"/>
-    {/* Clouds */}
-    <ellipse cx="100" cy="44" rx="38" ry="14" fill="white" opacity="0.8"/>
-    <ellipse cx="130" cy="38" rx="28" ry="12" fill="white" opacity="0.9"/>
-    <ellipse cx="72"  cy="40" rx="24" ry="10" fill="white" opacity="0.7"/>
-    <ellipse cx="370" cy="56" rx="42" ry="13" fill="white" opacity="0.75"/>
-    <ellipse cx="400" cy="50" rx="30" ry="10" fill="white" opacity="0.85"/>
-    {/* Sun glow */}
-    <circle cx="400" cy="55" r="22" fill="rgba(255,210,120,0.18)"/>
-    <circle cx="400" cy="55" r="14" fill="rgba(255,210,120,0.22)"/>
-    <circle cx="400" cy="55" r="8"  fill="rgba(255,200,80,0.35)"/>
-    {/* Ground */}
-    <rect x="0" y="240" width="480" height="40" fill="url(#ground)"/>
-    {/* Road */}
-    <rect x="170" y="240" width="140" height="40" fill="#D0CEC6"/>
-    <rect x="230" y="245" width="20" height="6"  fill="white" opacity="0.5" rx="2"/>
-    <rect x="230" y="257" width="20" height="6"  fill="white" opacity="0.5" rx="2"/>
-    {/* Main building — modern facade */}
-    <rect x="148" y="90" width="184" height="150" fill="#F2EFE9"/>
-    <rect x="148" y="90" width="184" height="150" fill="none" stroke="#D0CEC8" strokeWidth="1"/>
-    {/* Rooftop trim */}
-    <rect x="142" y="84" width="196" height="10" fill="#E8E5DE"/>
-    <rect x="142" y="84" width="196" height="10" fill="none" stroke="#D0CEC8" strokeWidth="0.75"/>
-    {/* Windows row 1 */}
-    <rect x="165" y="104" width="30" height="22" fill="#C8DFF0" rx="2" opacity="0.85"/>
-    <rect x="205" y="104" width="30" height="22" fill="#D4E8F5" rx="2" opacity="0.9"/>
-    <rect x="245" y="104" width="30" height="22" fill="#C0DAF0" rx="2" opacity="0.8"/>
-    <rect x="285" y="104" width="30" height="22" fill="#CCE2F5" rx="2" opacity="0.85"/>
-    {/* Windows row 2 */}
-    <rect x="165" y="140" width="30" height="22" fill="#D8E9F5" rx="2"/>
-    <rect x="205" y="140" width="30" height="22" fill="#C4DDF0" rx="2"/>
-    <rect x="245" y="140" width="30" height="22" fill="#D2E6F5" rx="2"/>
-    <rect x="285" y="140" width="30" height="22" fill="#C8E0F0" rx="2"/>
-    {/* Windows row 3 */}
-    <rect x="165" y="176" width="30" height="22" fill="#D0E4F5" rx="2"/>
-    <rect x="205" y="176" width="30" height="22" fill="#CCE1F0" rx="2"/>
-    <rect x="285" y="176" width="30" height="22" fill="#D4E7F5" rx="2"/>
-    {/* Entry door */}
-    <rect x="216" y="200" width="48" height="40" fill="#BFD8EC" rx="3"/>
-    <rect x="216" y="200" width="48" height="40" fill="none" stroke="#A8C8E0" strokeWidth="1" rx="3"/>
-    <circle cx="240" cy="222" r="2.5" fill="#7AAEC5"/>
-    {/* Left building */}
-    <rect x="28" y="138" width="98" height="102" fill="#EAE7E0"/>
-    <rect x="28" y="138" width="98" height="102" fill="none" stroke="#D5D2CA" strokeWidth="0.75"/>
-    <rect x="38"  cy="152" width="18" height="14" fill="#C5DCF0" rx="1" opacity="0.8"/>
-    <rect x="38"  y="152" width="18" height="14" fill="#C5DCF0" rx="1"/>
-    <rect x="64"  y="152" width="18" height="14" fill="#D0E4F5" rx="1"/>
-    <rect x="90"  y="152" width="18" height="14" fill="#C8DFF0" rx="1"/>
-    <rect x="38"  y="178" width="18" height="14" fill="#D5E8F5" rx="1"/>
-    <rect x="64"  y="178" width="18" height="14" fill="#C0DAF0" rx="1"/>
-    <rect x="90"  y="178" width="18" height="14" fill="#CCDEF5" rx="1"/>
-    <rect x="38"  y="204" width="18" height="14" fill="#CCE2F0" rx="1"/>
-    <rect x="64"  y="204" width="18" height="14" fill="#D2E6F5" rx="1"/>
-    {/* Right building */}
-    <rect x="354" y="116" width="102" height="124" fill="#EDE9E2"/>
-    <rect x="354" y="116" width="102" height="124" fill="none" stroke="#D5D2CA" strokeWidth="0.75"/>
-    <rect x="364" y="130" width="20" height="16" fill="#CCE0F2" rx="1"/>
-    <rect x="392" y="130" width="20" height="16" fill="#D4E8F5" rx="1"/>
-    <rect x="420" y="130" width="20" height="16" fill="#C8DCF0" rx="1"/>
-    <rect x="364" y="158" width="20" height="16" fill="#D0E4F2" rx="1"/>
-    <rect x="392" y="158" width="20" height="16" fill="#CCE0F2" rx="1"/>
-    <rect x="420" y="158" width="20" height="16" fill="#D4E8F5" rx="1"/>
-    <rect x="364" y="186" width="20" height="16" fill="#CCE0F0" rx="1"/>
-    <rect x="392" y="186" width="20" height="16" fill="#D2E5F0" rx="1"/>
-    {/* Greenery */}
-    <ellipse cx="144" cy="240" rx="18" ry="22" fill="#7EAC6E" opacity="0.7"/>
-    <ellipse cx="336" cy="240" rx="18" ry="22" fill="#7EAC6E" opacity="0.7"/>
-    <rect x="140" y="236" width="8" height="20" fill="#5A8050" opacity="0.5"/>
-    <rect x="332" y="236" width="8" height="20" fill="#5A8050" opacity="0.5"/>
-  </svg>
-);
 
 const HeroSection: React.FC = () => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -135,7 +50,7 @@ const HeroSection: React.FC = () => {
           `,
         }}
       />
-      {/* Decorative geometric lines — blueprint style */}
+      {/* Decorative geometric lines - blueprint style */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-[0.035]">
         <svg viewBox="0 0 800 600" className="absolute bottom-0 right-0 w-[55%]">
           <rect x="380" y="60"  width="340" height="440" fill="none" stroke="#1B3A5C" strokeWidth="0.8"/>
@@ -157,7 +72,7 @@ const HeroSection: React.FC = () => {
           <motion.div variants={container} initial="hidden" animate="visible">
 
             {/* Eyebrow */}
-            <motion.div variants={item} className="flex items-center gap-3 mb-7">
+            {/* <motion.div variants={item} className="flex items-center gap-3 mb-7">
               <div
                 className="flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold"
                 style={{
@@ -173,7 +88,7 @@ const HeroSection: React.FC = () => {
                 />
                 Premium Real Estate
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* H1 */}
             <motion.h1
@@ -192,7 +107,7 @@ const HeroSection: React.FC = () => {
               style={{ fontSize: 17, color: '#5A5A5A', lineHeight: 1.78, fontWeight: 400 }}
             >
               Discover curated residential and commercial properties across India's most sought-after
-              locations — guided by expert advisors who put your goals first.
+              locations - guided by expert advisors who put your goals first.
             </motion.p>
 
             {/* CTAs */}
@@ -266,9 +181,13 @@ const HeroSection: React.FC = () => {
                 boxShadow: '0 8px 40px rgba(0,0,0,0.1)',
               }}
             >
-              {/* Illustration */}
-              <div className="relative h-[268px] bg-[#EEF5FA]">
-                <CityIllustration />
+              {/* Property image */}
+              <div className="relative h-[268px] bg-[#EEF5FA] overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80&auto=format&fit=crop"
+                  alt="The Meridian – modern residential apartment"
+                  className="w-full h-full object-cover"
+                />
                 {/* Premium badge */}
                 <div
                   className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-lg text-[10px] font-semibold"

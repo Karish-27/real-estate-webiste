@@ -1,6 +1,6 @@
 <div align="center">
 
-# BuildEstate — Backend API ⚙️
+# BuildEstate - Backend API ⚙️
 
 _The core REST API server driving the BuildEstate real estate platform._
 
@@ -16,15 +16,15 @@ _The core REST API server driving the BuildEstate real estate platform._
 
 ## ✨ Features
 
-- **JWT Authentication** — Hardened token-based user authentication using bcrypt password hashing.
-- **Property Management (CRUD)** — Robust operations to add, query, update, and remove properties with multiplexed image management (up to 4 images).
-- **Scalable Image Upload** — Multer temp-file integration piping seamlessly into ImageKit CDN pipelines.
-- **Appointment Architecture** — Guest and authenticated bookings coupled with autonomous email dispatch routing.
-- **AI Property Processing** — Interfacing with GPT-4.1 (GitHub Models) and Firecrawl web scraping for deep market analysis.
-- **Location Analytics** — Specialized localized data scraping tracking market trends for top Indian hubs.
-- **Administrative Utilities** — Dashboard analytics handling aggregate counts across properties, users, and transactions.
-- **Infrastructure Security** — `express-rate-limit` DDoS prevention, deep Helmet.js header shielding, and integrated CORS validation.
-- **Email Notifications** — Custom branded transactional payloads delivered utilizing Brevo SMTP.
+- **JWT Authentication** - Hardened token-based user authentication using bcrypt password hashing.
+- **Property Management (CRUD)** - Robust operations to add, query, update, and remove properties with multiplexed image management (up to 4 images).
+- **Scalable Image Upload** - Multer temp-file integration piping seamlessly into ImageKit CDN pipelines.
+- **Appointment Architecture** - Guest and authenticated bookings coupled with autonomous email dispatch routing.
+- **AI Property Processing** - Interfacing with GPT-4.1 (GitHub Models) and Firecrawl web scraping for deep market analysis.
+- **Location Analytics** - Specialized localized data scraping tracking market trends for top Indian hubs.
+- **Administrative Utilities** - Dashboard analytics handling aggregate counts across properties, users, and transactions.
+- **Infrastructure Security** - `express-rate-limit` DDoS prevention, deep Helmet.js header shielding, and integrated CORS validation.
+- **Email Notifications** - Custom branded transactional payloads delivered utilizing Brevo SMTP.
 
 ---
 
@@ -92,7 +92,7 @@ IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
 IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
 IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/your_id
 
-# AI Service Flags (optional — needed only for local AI Property Hub testing)
+# AI Service Flags (optional - needed only for local AI Property Hub testing)
 FIRECRAWL_API_KEY=your_firecrawl_api_key
 GITHUB_MODELS_API_KEY=your_github_pat_token
 ```

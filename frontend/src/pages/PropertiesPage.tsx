@@ -160,7 +160,7 @@ const PropertiesPage: React.FC = () => {
       {/* Sticky Navigation */}
       <Navbar />
 
-      <div className="flex">
+      <div className="flex pt-[70px]">
         {/* Left Sidebar - Filters */}
         <FilterSidebar onFilterChange={handleFilterChange} />
 

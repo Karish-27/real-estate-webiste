@@ -14,7 +14,7 @@ function getCached(key) {
 }
 
 function setCache(key, data) {
-    // Keep cache bounded — evict oldest entry if over 100 keys
+    // Keep cache bounded - evict oldest entry if over 100 keys
     if (_cache.size >= 100) {
         const oldest = _cache.keys().next().value;
         _cache.delete(oldest);
@@ -78,7 +78,7 @@ export const searchProperties = async (req, res) => {
             return res.json({ success: true, ...cached, fromCache: true });
         }
 
-        console.log(`[PropertyController] search — city=${city} maxPrice=${maxPrice} type=${propertyType} category=${propertyCategory}`);
+        console.log(`[PropertyController] search - city=${city} maxPrice=${maxPrice} type=${propertyType} category=${propertyCategory}`);
 
         // Step 1: Firecrawl
         let propertiesData;
@@ -174,7 +174,7 @@ export const getLocationTrends = async (req, res) => {
             return res.json({ success: true, ...cached, fromCache: true });
         }
 
-        console.log(`[PropertyController] trends — city=${city}`);
+        console.log(`[PropertyController] trends - city=${city}`);
 
         // Step 1: Firecrawl
         let locationsData;

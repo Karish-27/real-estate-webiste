@@ -24,13 +24,13 @@ const aiLimiter = rateLimit({
     },
 });
 
-// Original route (backend format) — also rate-limited
+// Original route (backend format) - also rate-limited
 router.post('/properties/search', aiLimiter, searchProperties);
 
-// Alias route for frontend — transforms format, then rate-limits, then searches
+// Alias route for frontend - transforms format, then rate-limits, then searches
 router.post('/ai/search', aiLimiter, transformAISearchRequest, searchProperties);
 
-// Location trends — same rate limit (shares the 10/hr budget)
+// Location trends - same rate limit (shares the 10/hr budget)
 router.get('/locations/:city/trends', aiLimiter, getLocationTrends);
 
 export default router;

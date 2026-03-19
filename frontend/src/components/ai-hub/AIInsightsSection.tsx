@@ -11,7 +11,7 @@ const AIInsightsSection: React.FC = () => {
     {
       icon: Coffee,
       title: 'Lifestyle Intelligence',
-      description: 'From commute times to coffee shops, schools to nightlife—our AI maps your lifestyle needs to neighborhood characteristics.'
+      description: 'From commute times to coffee shops, schools to nightlife-our AI maps your lifestyle needs to neighborhood characteristics.'
     },
     {
       icon: Award,
@@ -34,7 +34,7 @@ const AIInsightsSection: React.FC = () => {
             Intelligent Insights
           </h2>
           <p className="font-manrope font-extralight text-lg text-[#4b5563] max-w-[700px] mx-auto">
-            Our AI doesn't just match properties—it understands your dreams, analyzes the market, and anticipates your future needs.
+            Our AI doesn't just match properties-it understands your dreams, analyzes the market, and anticipates your future needs.
           </p>
         </div>
 

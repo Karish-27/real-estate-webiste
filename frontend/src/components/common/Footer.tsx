@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-sm font-semibold mb-5 uppercase tracking-widest" style={{ color: 'rgba(255,255,255,0.45)', fontSize: 11 }}>Stay Updated</h4>
             <p className="text-sm leading-6 mb-5" style={{ color: 'rgba(255,255,255,0.6)', fontWeight: 300 }}>
-              Market trends, new listings, and expert insights — delivered to your inbox.
+              Market trends, new listings, and expert insights - delivered to your inbox.
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-3">
               <input

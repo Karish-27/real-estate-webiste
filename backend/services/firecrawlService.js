@@ -1,11 +1,11 @@
 import FirecrawlApp from "@mendable/firecrawl-js";
 
-// Firecrawl can be slow on large pages — cap at 60 seconds per call
+// Firecrawl can be slow on large pages - cap at 60 seconds per call
 const FIRECRAWL_TIMEOUT_MS = 60_000;
 const MAX_RETRIES = 2;
 const IS_PROD = process.env.NODE_ENV === 'production';
 
-/** Conditional logger — suppresses verbose output in production */
+/** Conditional logger - suppresses verbose output in production */
 const log = {
     info: (...args) => { if (!IS_PROD) console.log(...args); },
     warn: (...args) => console.warn(...args),
@@ -123,7 +123,7 @@ function getBudgetMaxIndex(maxPriceCrores) {
     for (const { lakhs, index } of BUDGET_THRESHOLDS) {
         if (lakhs >= budgetInLakhs) return index;
     }
-    // Budget exceeds all thresholds — omit parameter (no cap)
+    // Budget exceeds all thresholds - omit parameter (no cap)
     return null;
 }
 
@@ -212,7 +212,7 @@ function sanitize(input, maxLen = 60) {
 class FirecrawlService {
     constructor(apiKey) {
         if (!apiKey) {
-            throw new Error('[FirecrawlService] API key is required — no fallback allowed.');
+            throw new Error('[FirecrawlService] API key is required - no fallback allowed.');
         }
         this.firecrawl = new FirecrawlApp({ apiKey });
     }
@@ -292,7 +292,7 @@ class FirecrawlService {
                 required: ["properties"]
             };
 
-            // Build a more precise prompt — reinforces filters even on a pre-filtered page
+            // Build a more precise prompt - reinforces filters even on a pre-filtered page
             const promptLines = [
                 `Extract exactly ${limit} ${propertyCategory} ${propertyTypeLabel} listed for sale in ${city}.`,
                 `Maximum budget: ${budgetLabel}.`,
@@ -302,7 +302,7 @@ class FirecrawlService {
             ];
             if (!isDeterministic) {
                 // On the generic page we need the LLM to filter harder
-                promptLines.push(`IMPORTANT: This is a general listing page. Carefully filter ONLY ${propertyTypeLabel} — ignore all other property types.`);
+                promptLines.push(`IMPORTANT: This is a general listing page. Carefully filter ONLY ${propertyTypeLabel} - ignore all other property types.`);
             }
 
             // ── Use scrapeUrl with JSON format instead of extract() ──
@@ -328,7 +328,7 @@ class FirecrawlService {
             // scrapeUrl returns extracted JSON at scrapeResult.json
             const rawProperties = scrapeResult.json?.properties || [];
 
-            // Enforce limit in code — never trust the LLM to respect it
+            // Enforce limit in code - never trust the LLM to respect it
             const properties = rawProperties.slice(0, limit);
             log.info(`[Firecrawl] Extracted ${rawProperties.length} properties, returning ${properties.length}`);
 
@@ -346,7 +346,7 @@ class FirecrawlService {
 
             const formattedLocation = city.toLowerCase().replace(/\s+/g, '-');
 
-            // Use specific trends page URL — NO wildcard
+            // Use specific trends page URL - NO wildcard
             const url = `https://www.99acres.com/property-rates-and-price-trends-in-${formattedLocation}-prffid`;
 
             const locationSchema = {
@@ -452,7 +452,7 @@ class FirecrawlService {
 }
 
 /**
- * Factory — create a FirecrawlService with a caller-supplied API key.
+ * Factory - create a FirecrawlService with a caller-supplied API key.
  * The default-singleton export is intentionally removed:
  * server env-var keys MUST NOT be used as a fallback.
  */

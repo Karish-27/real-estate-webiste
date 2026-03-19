@@ -1,6 +1,6 @@
 <div align="center">
 
-# BuildEstate — Admin Panel 📊
+# BuildEstate - Admin Panel 📊
 
 _Comprehensive administrative dashboard for overseeing the BuildEstate real estate ecosystem._
 
@@ -17,11 +17,11 @@ _Comprehensive administrative dashboard for overseeing the BuildEstate real esta
 
 ## ✨ Key Features
 
-- **Dashboard Analytics** — Real-time performance chart tracking utilizing `Chart.js` for properties, systemic users, and overall lifecycle interactions.
-- **Property Management** — Complete administrative catalog adjustments including add, update, and deletion protocols integrated securely.
-- **Appointment Management** — High-level lifecycle overview for pending engagements; deploy approvals, cancellations, or digitally bridge meeting structures.
-- **User Overview** — Transparent readout of authenticated entities traversing the platform.
-- **Multiplex Image Upload** — High-speed transmission of up to 4 high-res representations per standard property passing to ImageKit globally.
+- **Dashboard Analytics** - Real-time performance chart tracking utilizing `Chart.js` for properties, systemic users, and overall lifecycle interactions.
+- **Property Management** - Complete administrative catalog adjustments including add, update, and deletion protocols integrated securely.
+- **Appointment Management** - High-level lifecycle overview for pending engagements; deploy approvals, cancellations, or digitally bridge meeting structures.
+- **User Overview** - Transparent readout of authenticated entities traversing the platform.
+- **Multiplex Image Upload** - High-speed transmission of up to 4 high-res representations per standard property passing to ImageKit globally.
 
 ---
 

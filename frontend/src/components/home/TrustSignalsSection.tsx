@@ -5,7 +5,7 @@ const FEATURES = [
   {
     icon: 'verified_user',
     title: 'Verified Listings Only',
-    desc: 'Every property on our platform is physically verified by our team to ensure what you see is what you get — no misleading photos, no outdated prices.',
+    desc: 'Every property on our platform is physically verified by our team to ensure what you see is what you get - no misleading photos, no outdated prices.',
   },
   {
     icon: 'support_agent',

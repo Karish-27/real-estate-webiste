@@ -128,7 +128,7 @@ const AIHubProductionPage: React.FC = () => {
             </h1>
             <p className="text-lg mb-10 max-w-2xl mx-auto" style={{ color: '#5A5A5A', lineHeight: 1.75 }}>
               Smart property search, market trend analysis, rental yield data, and investment insights
-              — all powered by real market data to help you make informed decisions.
+              - all powered by real market data to help you make informed decisions.
             </p>
 
             {/* CTA Buttons */}
@@ -280,7 +280,7 @@ const AIHubDevPage: React.FC = () => {
 
   /* ── Handlers ────────────────────────────────────────── */
 
-  /** P1-1 — Turn an axios error into a user-friendly message. */
+  /** P1-1 - Turn an axios error into a user-friendly message. */
   const friendlyError = (err: any, fallback: string): { msg: string; isKeyError: boolean } => {
     const status = err?.response?.status;
     const serverMsg = err?.response?.data?.message || '';
@@ -290,7 +290,7 @@ const AIHubDevPage: React.FC = () => {
       return { msg: 'Your API keys are missing or invalid. Please add your GitHub Models and Firecrawl keys.', isKeyError: true };
     }
     if (status === 429 || serverCode === 'RATE_LIMIT_EXCEEDED') {
-      return { msg: 'Rate limit reached — you’ve used 10 AI searches this hour. Please wait before searching again.', isKeyError: false };
+      return { msg: 'Rate limit reached - you’ve used 10 AI searches this hour. Please wait before searching again.', isKeyError: false };
     }
     if (status === 503 || serverCode === 'FIRECRAWL_ERROR') {
       return { msg: 'The property scraping service is temporarily unavailable. Please try again in a few minutes.', isKeyError: false };
@@ -370,7 +370,7 @@ const AIHubDevPage: React.FC = () => {
     <div className="bg-[#FAFAF8] min-h-screen">
       <Navbar />
 
-      {/* Hero — search form */}
+      {/* Hero - search form */}
       {AIHeroSection && (
         <React.Suspense fallback={<div className="h-96 flex items-center justify-center"><div className="w-12 h-12 border-4 border-[#1B3A5C] border-t-transparent rounded-full animate-spin" /></div>}>
           <AIHeroSection
@@ -403,7 +403,7 @@ const AIHubDevPage: React.FC = () => {
         )}
       </div>
 
-      {/* P2-2: Location trends — explicit button, not auto-fired */}
+      {/* P2-2: Location trends - explicit button, not auto-fired */}
       {hasSearched && !searchLoading && properties.length > 0 && AILocationTrends && (
         <React.Suspense fallback={null}>
           {!hasLoadedTrends ? (

@@ -5,7 +5,7 @@ const STEPS = [
   {
     num:   '01',
     title: 'Share Your Requirements',
-    desc:  'Tell us about your ideal property — location, budget, size, and lifestyle needs. Our advisors listen carefully to understand exactly what you\'re looking for.',
+    desc:  'Tell us about your ideal property - location, budget, size, and lifestyle needs. Our advisors listen carefully to understand exactly what you\'re looking for.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
@@ -15,7 +15,7 @@ const STEPS = [
   {
     num:   '02',
     title: 'Explore Curated Options',
-    desc:  'We shortlist verified properties matching your criteria from 12,400+ listings — saving you hours of research and site visits to mismatched properties.',
+    desc:  'We shortlist verified properties matching your criteria from 12,400+ listings - saving you hours of research and site visits to mismatched properties.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
@@ -26,7 +26,7 @@ const STEPS = [
   {
     num:   '03',
     title: 'Close With Confidence',
-    desc:  'From property visits to legal verification and loan assistance — our team stays with you at every step until you get the keys to your new home.',
+    desc:  'From property visits to legal verification and loan assistance - our team stays with you at every step until you get the keys to your new home.',
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
@@ -56,13 +56,13 @@ const ProcessSection: React.FC = () => (
           <em style={{ fontStyle: 'italic', color: '#1B3A5C' }}>Your Perfect Property</em>
         </h2>
         <p className="mt-4 text-sm max-w-[400px] mx-auto" style={{ color: '#7A7872', lineHeight: 1.75 }}>
-          A simple, transparent process — no surprises, no hidden steps.
+          A simple, transparent process - no surprises, no hidden steps.
         </p>
       </motion.div>
 
       <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0">
 
-        {/* Connecting dashed line — desktop only */}
+        {/* Connecting dashed line - desktop only */}
         <div className="absolute hidden lg:block" style={{ top: 44, left: '18%', width: '64%', height: 1 }}>
           <motion.div
             className="h-full"

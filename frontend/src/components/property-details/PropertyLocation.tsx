@@ -109,7 +109,7 @@ const PropertyLocation: React.FC<PropertyLocationProps> = ({ address, city, stat
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title={`Map — ${propertyName || displayTitle}`}
+            title={`Map - ${propertyName || displayTitle}`}
             className="absolute inset-0 w-full h-full"
           />
         ) : (

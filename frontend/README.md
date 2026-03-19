@@ -1,6 +1,6 @@
 <div align="center">
 
-# BuildEstate — Frontend 🌐
+# BuildEstate - Frontend 🌐
 
 _User-facing React application for the BuildEstate platform._
 
@@ -18,13 +18,13 @@ _User-facing React application for the BuildEstate platform._
 
 ## ✨ Features
 
-- **Property Browsing** — Filter by type, price, availability, and amenities with interactive grid/list views.
-- **Property Details** — Comprehensive image gallery, amenities list, and integrated appointment booking via ImageKit.
-- **User Authentication** — Secure sign up, log in, and password recovery.
-- **Appointment Booking** — Seamlessly schedule property viewings as a guest or authenticated user.
-- **AI Property Hub** — In-browser GPT-4.1 powered search and holistic market analysis (requires local enablement).
-- **SEO Optimized** — Built-in structured data generation, sitemap mapping, `robots.txt`, and per-page meta tags.
-- **Page Transitions** — Fluid UI animations powered by Framer Motion.
+- **Property Browsing** - Filter by type, price, availability, and amenities with interactive grid/list views.
+- **Property Details** - Comprehensive image gallery, amenities list, and integrated appointment booking via ImageKit.
+- **User Authentication** - Secure sign up, log in, and password recovery.
+- **Appointment Booking** - Seamlessly schedule property viewings as a guest or authenticated user.
+- **AI Property Hub** - In-browser GPT-4.1 powered search and holistic market analysis (requires local enablement).
+- **SEO Optimized** - Built-in structured data generation, sitemap mapping, `robots.txt`, and per-page meta tags.
+- **Page Transitions** - Fluid UI animations powered by Framer Motion.
 
 ---
 
@@ -63,10 +63,10 @@ Edit the `.env.local` file to include your connection parameters.
 Create or edit `frontend/.env.local`:
 
 ```env
-# Required — points to your backend API
+# Required - points to your backend API
 VITE_API_BASE_URL=http://localhost:4000
 
-# Optional — set to "true" to enable AI Property Hub locally
+# Optional - set to "true" to enable AI Property Hub locally
 VITE_ENABLE_AI_HUB=true
 ```
 

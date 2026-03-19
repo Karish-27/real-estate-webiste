@@ -39,7 +39,7 @@ There are several ways you can contribute to the BuildEstate project:
    cp frontend/.env.example frontend/.env.local
    cp admin/.env.example admin/.env.local
    ```
-5. Edit each `.env.local` with your credentials — see [README.md](README.md) for the full list of required variables
+5. Edit each `.env.local` with your credentials - see [README.md](README.md) for the full list of required variables
 
 ### Making Changes
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import Navbar from '../components/common/Navbar';
 import SimpleFooter from '../components/common/SimpleFooter';
 import LoadingState from '../components/common/LoadingState';
@@ -34,8 +34,10 @@ interface PropertyData {
 
 const PropertyDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const [property, setProperty] = useState<PropertyData | null>(null);
-  const [loading, setLoading] = useState(true);
+  const location = useLocation();
+  const stateProperty = (location.state as { property?: PropertyData } | null)?.property ?? null;
+  const [property, setProperty] = useState<PropertyData | null>(stateProperty);
+  const [loading, setLoading] = useState(!stateProperty);
   const [error, setError] = useState<string | null>(null);
 
   // Dynamic SEO based on loaded property
@@ -47,6 +49,7 @@ const PropertyDetailsPage: React.FC = () => {
   });
 
   useEffect(() => {
+    if (stateProperty) return; // already have data from navigation state
     const fetchProperty = async () => {
       if (!id) return;
       try {
@@ -128,7 +131,7 @@ const PropertyDetailsPage: React.FC = () => {
       ? cityParts[0]                         // "City, State" → City
       : cityParts[0];                        // "City" → City
 
-  // Parse amenities — handle legacy data where amenities may be a JSON string
+  // Parse amenities - handle legacy data where amenities may be a JSON string
   const parseAmenities = (amenities: string[]): string[] => {
     if (!amenities || amenities.length === 0) return [];
     // If single element that looks like a JSON array, parse it

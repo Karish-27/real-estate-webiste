@@ -34,7 +34,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
     'Children Play Area', 'Gated Community',
   ];
 
-  // Price display helper — shows L or Cr
+  // Price display helper - shows L or Cr
   const formatPriceLabel = (value: number): string => {
     if (value >= 200) return '20+ Cr';
     if (value >= 10) return `${(value / 10).toFixed(value % 10 === 0 ? 0 : 1)} Cr`;
@@ -311,7 +311,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
         {/* Reset Filters Button */}
         <button
           onClick={handleReset}
-          className="w-full bg-transparent border border-[#1B3A5C] text-[#1B3A5C] font-inter font-bold text-base py-4 rounded-xl transition-all hover:bg-[#1B3A5C] hover:text-white sticky bottom-0"
+          className="w-full bg-transparent border border-[#1B3A5C] text-[#1B3A5C] font-inter font-bold text-base py-4 rounded-xl transition-all hover:bg-[#1B3A5C] hover:text-white"
         >
           Reset Filters
         </button>

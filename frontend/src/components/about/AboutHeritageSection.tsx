@@ -70,7 +70,7 @@ const AboutHeritageSection: React.FC = () => {
             </blockquote>
 
             {/* Link */}
-            <a 
+            {/* <a 
               href="#team" 
               className="inline-flex items-center gap-2 border-b border-[#221410] pb-1 group hover:border-[#1B3A5C] transition-colors"
             >
@@ -79,7 +79,7 @@ const AboutHeritageSection: React.FC = () => {
               </span>
 
               <ArrowRight className="w-4 h-4 text-[#221410] group-hover:text-[#1B3A5C] transition-colors" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

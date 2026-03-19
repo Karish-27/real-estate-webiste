@@ -33,7 +33,7 @@ const PropertyMatchPanel: React.FC<{ active: boolean }> = ({ active }) => (
       </h3>
       <p className="text-sm leading-7 mb-8" style={{ color: '#5A5A5A' }}>
         We evaluate each property against your lifestyle needs, commute requirements, budget, and
-        long-term investment goals — so every shortlisted option is genuinely worth your time.
+        long-term investment goals - so every shortlisted option is genuinely worth your time.
       </p>
       <div className="flex gap-4 flex-wrap">
         {([['200+', 'Data Points'], ['94%', 'Match Accuracy'], ['3 Days', 'Avg. Shortlist Time']] as const).map(([val, lbl]) => (
@@ -71,7 +71,7 @@ const MarketTrendsPanel: React.FC = () => (
       </h3>
       <p className="text-sm leading-7 mb-6" style={{ color: '#5A5A5A' }}>
         Price-per-sqft trends, rental yield comparisons, and investment scoring across major Indian metros
-        — updated regularly so you can act on accurate, up-to-date information.
+        - updated regularly so you can act on accurate, up-to-date information.
       </p>
       <ul className="flex flex-col gap-3">
         {[
@@ -205,10 +205,10 @@ const AreaIntelPanel: React.FC = () => (
       </h3>
       <p className="text-sm leading-7 mb-3" style={{ color: '#5A5A5A' }}>
         School proximity, commute times, walkability scores, noise levels, and upcoming
-        development plans — all in one detailed area report before you decide.
+        development plans - all in one detailed area report before you decide.
       </p>
       <p className="text-sm leading-7" style={{ color: '#5A5A5A' }}>
-        Sourced from municipal records, Google Maps, transit APIs, and satellite data — updated regularly.
+        Sourced from municipal records, Google Maps, transit APIs, and satellite data - updated regularly.
       </p>
     </div>
     <div className="grid grid-cols-2 gap-3">

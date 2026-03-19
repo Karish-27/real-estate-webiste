@@ -1,6 +1,6 @@
 @custom-variant dark (&:is(.dark *));
 
-/* NestPrime — Professional Light Real Estate Design System */
+/* NestPrime - Professional Light Real Estate Design System */
 :root {
   /* Core Brand Palette */
   --bg-primary:       #FAFAF8;
@@ -8,12 +8,12 @@
   --bg-card:          #FFFFFF;
   --bg-subtle:        #F5F4F0;
 
-  /* Accent — Deep Navy (trust, authority) */
+  /* Accent - Deep Navy (trust, authority) */
   --nest-accent:      #1B3A5C;
   --nest-accent-soft: rgba(27, 58, 92, 0.08);
   --nest-accent-mid:  rgba(27, 58, 92, 0.15);
 
-  /* Warm Copper — secondary accent for CTAs & highlights */
+  /* Warm Copper - secondary accent for CTAs & highlights */
   --nest-copper:      #B5572B;
   --nest-copper-soft: rgba(181, 87, 43, 0.1);
 
@@ -33,7 +33,7 @@
   --font-lato:     'Lato', sans-serif;
   --font-mono:     'JetBrains Mono', monospace;
 
-  /* Legacy font aliases — map to professional fonts */
+  /* Legacy font aliases - map to professional fonts */
   --font-cormorant:    'Playfair Display', serif;
   --font-dm-sans:      'Inter', sans-serif;
   --font-fraunces:     'Playfair Display', serif;
@@ -229,7 +229,7 @@
     opacity: 0.7;
   }
 
-  /* Section label — uppercase inter small caps */
+  /* Section label - uppercase inter small caps */
   .nest-label {
     font-family: var(--font-inter);
     font-size: 11px;

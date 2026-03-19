@@ -15,7 +15,7 @@ import {
 
 const router = express.Router();
 
-// User routes — guest booking supported (no protect), auth booking also supported
+// User routes - guest booking supported (no protect), auth booking also supported
 router.post("/schedule", scheduleViewing);              // Guest booking (no auth required)
 router.post("/schedule/auth", protect, scheduleViewing); // Authenticated booking
 router.get("/user", getAppointmentsByUser);

@@ -14,7 +14,7 @@ const BRAND = {
   year: new Date().getFullYear(),
 };
 
-// Shared wrapper — keeps every email consistent
+// Shared wrapper - keeps every email consistent
 const wrap = (title, body) => `
 <div style="max-width:600px;margin:0 auto;font-family:'Helvetica Neue',Arial,sans-serif;color:${BRAND.text};line-height:1.7;background:${BRAND.bg};border-radius:12px;overflow:hidden;border:1px solid ${BRAND.border};">
 
@@ -160,6 +160,6 @@ export const getPasswordResetTemplate = (resetUrl) => wrap(
   ${btn(resetUrl, 'Reset Password')}
 
   <div style="background:#fef3c7;border-left:3px solid #d97706;padding:14px 16px;border-radius:6px;font-size:13px;color:#92400e;margin:24px 0 0;">
-    <strong>Didn't request this?</strong> You can safely ignore this email — your password will remain unchanged.
+    <strong>Didn't request this?</strong> You can safely ignore this email - your password will remain unchanged.
   </div>`
 );

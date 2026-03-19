@@ -12,13 +12,13 @@ const SYSTEM_PROMPT = `You are a concise Indian real estate expert assistant.
 Rules:
 - Always respond with valid JSON matching the requested schema.
 - Use INR currency (Lakhs/Crores) for all prices.
-- Keep analysis factual and data-driven — no speculation.
+- Keep analysis factual and data-driven - no speculation.
 - Never include markdown, code fences, or extra text outside the JSON.`;
 
 class AIService {
   constructor(apiKey) {
     if (!apiKey) {
-      throw new Error('[AIService] API key is required — no fallback allowed.');
+      throw new Error('[AIService] API key is required - no fallback allowed.');
     }
     this.apiKey = apiKey;
     this.client = ModelClient(
@@ -62,7 +62,7 @@ class AIService {
           ],
           model,
           temperature: 0.3,
-          max_tokens: 1500,   // increased from 800 — prevents JSON truncation
+          max_tokens: 1500,   // increased from 800 - prevents JSON truncation
           top_p: 1
         },
         // Pass abort signal if the SDK supports it
@@ -80,7 +80,7 @@ class AIService {
       return response.body.choices[0].message.content;
     } catch (error) {
       if (error.name === 'AbortError') {
-        console.error(`[AI] ${model} aborted — timeout exceeded`);
+        console.error(`[AI] ${model} aborted - timeout exceeded`);
       } else {
         console.error(`[AI] ${model} exception:`, error.message);
       }
@@ -201,7 +201,7 @@ Respond ONLY with this JSON schema:
 }
 
 /**
- * Factory — create an AIService with a caller-supplied API key.
+ * Factory - create an AIService with a caller-supplied API key.
  * The default-singleton export is intentionally removed:
  * server env-var keys MUST NOT be used as a fallback.
  */

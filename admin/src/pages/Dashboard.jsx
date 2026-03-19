@@ -33,7 +33,7 @@ const StatCard = ({ title, value, icon: Icon, accent, description, index }) => (
       </div>
     </div>
     <div className="text-3xl font-bold text-[#1C1B1A] mb-1 tabular-nums">
-      {value ?? <span className="text-[#9CA3AF] text-xl">—</span>}
+      {value ?? <span className="text-[#9CA3AF] text-xl">-</span>}
     </div>
     <div className="text-sm font-semibold text-[#1C1B1A] mb-0.5">{title}</div>
     <div className="text-xs text-[#9CA3AF]">{description}</div>
@@ -270,7 +270,7 @@ const Dashboard = () => {
           className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
             <h1 className="text-3xl font-bold text-[#1C1B1A] mb-1">Dashboard</h1>
-            <p className="text-[#5A5856] text-sm">Welcome back — here's what's happening today</p>
+            <p className="text-[#5A5856] text-sm">Welcome back - here's what's happening today</p>
           </div>
           <motion.button
             onClick={() => fetchStats(true)}
@@ -293,7 +293,7 @@ const Dashboard = () => {
 
         {/* Charts Row */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-          {/* Bar Chart — Views */}
+          {/* Bar Chart - Views */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -315,7 +315,7 @@ const Dashboard = () => {
             </div>
           </motion.div>
 
-          {/* Doughnut — Portfolio */}
+          {/* Doughnut - Portfolio */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
