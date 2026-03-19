@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import AuthHeader from '../components/auth/AuthHeader';
 import SignInForm from '../components/auth/SignInForm';
-import SocialLoginButtons from '../components/auth/SocialLoginButtons';
 import { useAuth } from '../contexts/AuthContext';
 
 const SignInPage: React.FC = () => {
@@ -47,9 +46,6 @@ const SignInPage: React.FC = () => {
 
           {/* Form */}
           <SignInForm onSubmit={handleSignIn} />
-
-          {/* Social Login */}
-          <SocialLoginButtons />
 
           {/* Sign Up Link */}
           <p className="text-center font-inter font-extralight text-sm text-[#64748B] mt-6">
