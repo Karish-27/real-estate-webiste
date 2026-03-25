@@ -46,7 +46,7 @@ const PropertiesGrid: React.FC<PropertiesGridProps> = ({ properties, viewMode = 
   };
 
   return (
-    <div className="flex-1 p-8">
+    <div className="flex-1 p-4 md:p-8">
       {/* Properties Grid */}
       <motion.div
         variants={container}

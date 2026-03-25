@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContactHeroSection: React.FC = () => {
   return (
-    <section className="bg-[#F9F7F2] border-b border-[rgba(230,224,218,0.5)] py-20">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-[#F9F7F2] border-b border-[rgba(230,224,218,0.5)] py-10 md:py-20">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         <div className="text-center">
           {/* Label */}
           <div className="flex justify-center mb-4">

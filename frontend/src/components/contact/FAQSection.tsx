@@ -22,7 +22,7 @@ const FAQSection: React.FC = () => {
     },
     {
       id: 3,
-      question: "Can I list my property exclusively with BuildEstate?",
+      question: "Can I list my property exclusively with NestPrime?",
       answer: "Yes, we offer exclusive listing agreements with premium marketing benefits including professional photography, virtual tours, AI-powered listing optimization, and dedicated property consultant support throughout the selling process."
     },
     {
@@ -37,8 +37,8 @@ const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-white py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="flex justify-center mb-3">
@@ -51,7 +51,7 @@ const FAQSection: React.FC = () => {
           </h2>
           <p className="font-inter text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
             Find quick answers to your most pressing questions about buying, selling, and
-            partnering with BuildEstate.
+            partnering with NestPrime.
           </p>
         </div>
 

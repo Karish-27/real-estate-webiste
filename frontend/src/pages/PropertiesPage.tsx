@@ -18,6 +18,7 @@ const PropertiesPage: React.FC = () => {
   });
 
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [properties, setProperties] = useState<Property[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -162,15 +163,20 @@ const PropertiesPage: React.FC = () => {
 
       <div className="flex pt-[70px]">
         {/* Left Sidebar - Filters */}
-        <FilterSidebar onFilterChange={handleFilterChange} />
+        <FilterSidebar
+          onFilterChange={handleFilterChange}
+          isOpen={mobileFilterOpen}
+          onClose={() => setMobileFilterOpen(false)}
+        />
 
         {/* Main Content Area */}
-        <div className="flex-1">
+        <div className="flex-1 min-w-0">
           {/* Properties Header with Sort and View Controls */}
           <PropertiesHeader
             totalProperties={filteredProperties.length}
             onSortChange={handleSortChange}
             onViewChange={handleViewChange}
+            onFilterToggle={() => setMobileFilterOpen(true)}
           />
 
 

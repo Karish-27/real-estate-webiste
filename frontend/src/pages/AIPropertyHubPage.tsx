@@ -112,7 +112,7 @@ const AIHubProductionPage: React.FC = () => {
             backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(27,58,92,0.06) 0%, transparent 55%)',
           }}
         />
-        <div className="max-w-[1280px] mx-auto px-8 pt-20 pb-16 relative z-10">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-8 pt-20 pb-16 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             {/* Badge */}
             <div
@@ -156,7 +156,7 @@ const AIHubProductionPage: React.FC = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="max-w-[1280px] mx-auto px-8 py-20">
+      <section className="max-w-[1280px] mx-auto px-4 md:px-8 py-20">
         <div className="text-center mb-14">
           <div className="nest-label mb-3">What's Inside</div>
           <h2 className="font-playfair font-semibold" style={{ fontSize: 'clamp(28px,3vw,40px)', color: '#1A1A1A' }}>
@@ -189,7 +189,7 @@ const AIHubProductionPage: React.FC = () => {
 
       {/* Upgrade CTA / Lead Gen */}
       <section className="py-20" style={{ background: '#1B3A5C' }}>
-        <div className="max-w-[800px] mx-auto px-8 text-center">
+        <div className="max-w-[800px] mx-auto px-4 md:px-8 text-center">
           <h2 className="font-playfair font-semibold mb-5" style={{ fontSize: 'clamp(28px,3vw,40px)', color: '#FFFFFF' }}>
             Get Full Access to Market Intel
           </h2>

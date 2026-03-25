@@ -28,7 +28,7 @@ const AILocationTrends: React.FC<Props> = ({
   /* Loading skeleton (Modern pulsing state) */
   if (loading) {
     return (
-      <section className="bg-white py-20 relative border-t border-[#E6E0DA]/50">
+      <section className="bg-white py-10 md:py-20 relative border-t border-[#E6E0DA]/50">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,117,91,0.02)_0%,transparent_100%)] pointer-events-none" />
         <div className="max-w-[1200px] mx-auto px-6 relative z-10 text-center animate-pulse">
           <div className="inline-flex items-center gap-3 bg-[#FAF8F4] border border-[#E6E0DA] shadow-sm rounded-full px-5 py-2.5 mb-8">
@@ -51,7 +51,7 @@ const AILocationTrends: React.FC<Props> = ({
   /* Error */
   if (error) {
     return (
-      <section className="bg-[#FAF8F4] py-16">
+      <section className="bg-[#FAF8F4] py-8 md:py-16">
         <div className="max-w-[600px] mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-2 text-amber-600 mb-2">
             <AlertCircle className="w-5 h-5" />
@@ -70,7 +70,7 @@ const AILocationTrends: React.FC<Props> = ({
   if (!locations.length && !analysis) return null;
 
   return (
-    <section className="bg-[#FAF8F4] py-20 border-t border-[#E6E0DA]/50 relative">
+    <section className="bg-[#FAF8F4] py-10 md:py-20 border-t border-[#E6E0DA]/50 relative">
       <div className="absolute top-0 inset-x-0 h-[400px] bg-gradient-to-b from-white to-transparent pointer-events-none" />
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">

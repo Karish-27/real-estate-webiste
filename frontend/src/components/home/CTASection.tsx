@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const CTASection: React.FC = () => (
-  <section className="py-28 relative overflow-hidden" style={{ background: '#1B3A5C' }}>
+  <section className="py-14 md:py-28 relative overflow-hidden" style={{ background: '#1B3A5C' }}>
 
     {/* Subtle geometric decoration */}
     <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-[0.06]">
@@ -14,7 +14,7 @@ const CTASection: React.FC = () => (
       </svg>
     </div>
 
-    <div className="max-w-[1280px] mx-auto px-8 text-center relative z-10">
+    <div className="max-w-[1280px] mx-auto px-4 md:px-8 text-center relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 1, y: 0 }}

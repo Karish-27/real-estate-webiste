@@ -21,8 +21,8 @@ const AIInsightsSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-white py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           {/* Icon */}

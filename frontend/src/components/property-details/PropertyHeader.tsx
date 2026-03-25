@@ -46,10 +46,10 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
 
   return (
     <div className="bg-white border-b border-[rgba(229,224,216,0.6)]">
-      <div className="max-w-[1280px] mx-auto px-8 py-8">
-        <div className="flex items-start justify-between gap-8">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-6 md:py-8">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
           {/* Left - Property Info */}
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             {/* Status Badge & Ref Number */}
             <div className="flex items-center gap-4 mb-6">
               <div className={`${currentStatus.bg} rounded-full px-4 py-1 flex items-center gap-2`}>
@@ -64,7 +64,7 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
             </div>
 
             {/* Property Name */}
-            <h1 className="font-manrope font-extralight text-4xl text-[#0F172A] leading-tight tracking-tight mb-3">
+            <h1 className="font-manrope font-extralight text-2xl md:text-4xl text-[#0F172A] leading-tight tracking-tight mb-3">
               {name}
             </h1>
 
@@ -80,15 +80,15 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
           </div>
 
           {/* Right - Price */}
-          <div className="text-right">
+          <div className="md:text-right">
             <p className="font-manrope font-extralight text-sm text-[#64748B] mb-2 uppercase tracking-wider">
               Listed Price
             </p>
-            <div className="flex items-baseline gap-1">
-              <span className="font-space-mono font-bold text-xl text-[#D4755B]">
+            <div className="flex items-baseline gap-1 md:justify-end">
+              <span className="font-space-mono font-bold text-lg md:text-xl text-[#D4755B]">
                 ₹
               </span>
-              <span className="font-space-mono font-bold text-4xl text-[#D4755B]">
+              <span className="font-space-mono font-bold text-2xl md:text-4xl text-[#D4755B]">
                 {price}
               </span>
             </div>
@@ -96,7 +96,7 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
         </div>
 
         {/* Key Specs */}
-        <div className="flex items-center gap-12 mt-8 pt-8 border-t border-[rgba(229,224,216,0.6)]">
+        <div className="flex items-center gap-6 md:gap-12 mt-6 md:mt-8 pt-6 md:pt-8 border-t border-[rgba(229,224,216,0.6)]">
           {/* Bedrooms */}
           <div className="flex flex-col items-center gap-3">
             <div className="w-12 h-12 bg-[rgba(212,117,91,0.1)] rounded-lg flex items-center justify-center">

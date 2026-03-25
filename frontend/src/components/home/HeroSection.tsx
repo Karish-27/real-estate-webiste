@@ -65,8 +65,8 @@ const HeroSection: React.FC = () => {
         </svg>
       </div>
 
-      <div className="max-w-[1280px] mx-auto px-8 py-20 relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-10 md:py-20 relative z-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* ── Left ── */}
           <motion.div variants={container} initial="hidden" animate="visible">

@@ -120,7 +120,7 @@ const AISearchResults: React.FC<Props> = ({ properties, loading, error, city }) 
   /* Loading skeleton (Modern pulsing state) */
   if (loading) {
     return (
-      <section className="bg-[#FAF8F4] py-20 relative">
+      <section className="bg-[#FAF8F4] py-10 md:py-20 relative">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,117,91,0.03)_0%,transparent_100%)] pointer-events-none" />
 
         <div className="max-w-[1200px] mx-auto px-6 relative z-10">
@@ -172,7 +172,7 @@ const AISearchResults: React.FC<Props> = ({ properties, loading, error, city }) 
   /* Error */
   if (error) {
     return (
-      <section className="bg-[#FAF8F4] py-16">
+      <section className="bg-[#FAF8F4] py-8 md:py-16">
         <div className="max-w-[600px] mx-auto px-6 text-center">
           <div className="w-16 h-16 bg-red-50 border border-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <SearchX className="w-8 h-8 text-red-400" />
@@ -187,7 +187,7 @@ const AISearchResults: React.FC<Props> = ({ properties, loading, error, city }) 
   /* Empty */
   if (properties.length === 0) {
     return (
-      <section className="bg-[#FAF8F4] py-16">
+      <section className="bg-[#FAF8F4] py-8 md:py-16">
         <div className="max-w-[600px] mx-auto px-6 text-center">
           <div className="w-16 h-16 bg-[#D4755B]/10 rounded-full flex items-center justify-center mx-auto mb-4">
             <Home className="w-8 h-8 text-[#D4755B]" />
@@ -204,7 +204,7 @@ const AISearchResults: React.FC<Props> = ({ properties, loading, error, city }) 
 
   /* Results */
   return (
-    <section className="bg-[#FAF8F4] py-16">
+    <section className="bg-[#FAF8F4] py-8 md:py-16">
       <div className="max-w-[1200px] mx-auto px-6">
         {/* Header */}
         <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">

@@ -20,7 +20,7 @@ const AIAnalysisPanel: React.FC<Props> = ({ analysis, loading, error, city }) =>
   /* Loading skeleton (Modern pulsing state) */
   if (loading) {
     return (
-      <section className="bg-white py-20 relative border-t border-[#E6E0DA]/50">
+      <section className="bg-white py-10 md:py-20 relative border-t border-[#E6E0DA]/50">
         <div className="absolute inset-0 bg-gradient-to-b from-[#FAF8F4] to-transparent pointer-events-none" />
         <div className="max-w-[1200px] mx-auto px-6 relative z-10 animate-pulse">
           {/* Header Skeleton */}
@@ -62,7 +62,7 @@ const AIAnalysisPanel: React.FC<Props> = ({ analysis, loading, error, city }) =>
   if (error || !analysis) return null;
 
   return (
-    <section className="bg-white py-20 border-t border-[#E6E0DA]/50 relative">
+    <section className="bg-white py-10 md:py-20 border-t border-[#E6E0DA]/50 relative">
       <div className="absolute top-0 inset-x-0 h-[400px] bg-gradient-to-b from-[#FAF8F4] to-transparent pointer-events-none" />
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">

@@ -4,8 +4,8 @@ import heritageImage from '../../images/Heritage section.jpg';
 
 const AboutHeritageSection: React.FC = () => {
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-white py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left - Image with Border */}
           <div className="relative">
@@ -49,7 +49,7 @@ const AboutHeritageSection: React.FC = () => {
             {/* Description Paragraphs */}
             <div className="space-y-6 mb-8">
               <p className="font-inter font-extralight text-base leading-[26px] text-[#4b5563]">
-                Founded by architects and data scientists, BuildEstate emerged from a
+                Founded by architects and data scientists, NestPrime emerged from a
                 simple observation: the search for a home had become a transaction, losing
                 the emotional resonance of finding one's sanctuary.
               </p>

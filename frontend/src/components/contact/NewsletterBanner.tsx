@@ -11,8 +11,8 @@ const NewsletterBanner: React.FC = () => {
   };
 
   return (
-    <section className="bg-[#C05621] py-16">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-[#C05621] py-8 md:py-16">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Left - Text Content */}
           <div className="flex-1 text-white">

@@ -12,8 +12,8 @@ const AboutAISection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F2EFE9] border-t border-[#E6E0DA] py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-[#F2EFE9] border-t border-[#E6E0DA] py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left - Content */}
           <div>

@@ -21,8 +21,8 @@ const FEATURES = [
 
 const TrustSignalsSection: React.FC = () => {
   return (
-    <section style={{ background: '#FFFFFF' }} className="py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section style={{ background: '#FFFFFF' }} className="py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
 
         {/* Section Header */}
         <div className="text-center mb-14">

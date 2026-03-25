@@ -192,8 +192,8 @@ const PropertyCard: React.FC<{ property: Property; delay: number }> = ({ propert
 };
 
 const CuratedListingsSection: React.FC = () => (
-  <section className="py-24" style={{ background: '#FAFAF8' }}>
-    <div className="max-w-[1280px] mx-auto px-8">
+  <section className="py-12 md:py-24" style={{ background: '#FAFAF8' }}>
+    <div className="max-w-[1280px] mx-auto px-4 md:px-8">
       <motion.div
         className="flex items-end justify-between mb-14"
         initial={{ opacity: 0, y: 24 }}

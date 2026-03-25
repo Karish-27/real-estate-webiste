@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════
-// BuildEstate Email Templates
+// NestPrime Email Templates
 // Design: Warm terracotta (#D4755B), clean & professional
 // ═══════════════════════════════════════════════════════════
 
@@ -10,7 +10,7 @@ const BRAND = {
   border: '#E6E0DA',
   text: '#374151',
   muted: '#6B7280',
-  site: process.env.WEBSITE_URL || 'https://buildestate.vercel.app',
+  site: process.env.WEBSITE_URL || 'https://NestPrime.vercel.app',
   year: new Date().getFullYear(),
 };
 
@@ -21,7 +21,7 @@ const wrap = (title, body) => `
   <!-- Header -->
   <div style="background:${BRAND.dark};padding:32px 28px;text-align:center;">
     <h1 style="margin:0;font-size:22px;font-weight:700;color:#ffffff;letter-spacing:0.5px;">${title}</h1>
-    <p style="margin:8px 0 0;font-size:13px;color:rgba(255,255,255,0.7);">BuildEstate</p>
+    <p style="margin:8px 0 0;font-size:13px;color:rgba(255,255,255,0.7);">NestPrime</p>
   </div>
 
   <!-- Body -->
@@ -31,7 +31,7 @@ const wrap = (title, body) => `
 
   <!-- Footer -->
   <div style="border-top:1px solid ${BRAND.border};padding:20px 28px;text-align:center;font-size:12px;color:${BRAND.muted};">
-    <p style="margin:0;">&copy; ${BRAND.year} BuildEstate. All rights reserved.</p>
+    <p style="margin:0;">&copy; ${BRAND.year} NestPrime. All rights reserved.</p>
     <p style="margin:8px 0 0;">
       <a href="${BRAND.site}" style="color:${BRAND.color};text-decoration:none;">Website</a>
       &nbsp;&middot;&nbsp;
@@ -131,7 +131,7 @@ export const getNewsletterTemplate = (email) => wrap(
 // ─── 4. Welcome (Registration) ──────────────────────────
 
 export const getWelcomeTemplate = (name) => wrap(
-  'Welcome to BuildEstate',
+  'Welcome to NestPrime',
   `<p style="margin:0 0 20px;font-size:15px;">Hello <strong style="color:${BRAND.color};">${name}</strong>,</p>
   <p style="margin:0 0 24px;font-size:15px;">Your account has been created successfully. Here's what you can do:</p>
 
@@ -153,7 +153,7 @@ export const getWelcomeTemplate = (name) => wrap(
 
 export const getPasswordResetTemplate = (resetUrl) => wrap(
   'Reset Your Password',
-  `<p style="margin:0 0 20px;font-size:15px;">We received a request to reset your BuildEstate account password.</p>
+  `<p style="margin:0 0 20px;font-size:15px;">We received a request to reset your NestPrime account password.</p>
 
   <p style="margin:0 0 8px;font-size:14px;color:${BRAND.muted};">Click the button below to set a new password. This link expires in <strong>10 minutes</strong>.</p>
 

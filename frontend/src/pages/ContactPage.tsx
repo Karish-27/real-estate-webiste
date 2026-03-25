@@ -13,7 +13,7 @@ import NewsletterBanner from '../components/contact/NewsletterBanner';
 const ContactPage: React.FC = () => {
   useSEO({
     title: 'Contact Us',
-    description: 'Get in touch with BuildEstate. We\'re here to help you find your dream property.',
+    description: 'Get in touch with NestPrime. We\'re here to help you find your dream property.',
   });
 
   return (
@@ -26,7 +26,7 @@ const ContactPage: React.FC = () => {
 
       {/* Contact Form & Info Cards Section */}
       <section className="bg-white py-16">
-        <div className="max-w-[1280px] mx-auto px-8">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Left - Contact Form (2/3 width) */}
             <div className="lg:col-span-2">

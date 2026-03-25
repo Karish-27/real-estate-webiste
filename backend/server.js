@@ -82,7 +82,7 @@ const allowedOrigins = [
   'http://localhost:4000',
   'http://localhost:5174',
   'http://localhost:5173',
-  'https://buildestate.vercel.app',
+  'https://NestPrime.vercel.app',
   'https://real-estate-webiste-swart.vercel.app',
   'https://real-estate-website-admin.onrender.com',
   'https://real-estate-webiste.onrender.com',

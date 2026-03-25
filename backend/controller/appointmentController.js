@@ -209,7 +209,7 @@ export const updateAppointmentStatus = async (req, res) => {
         const mailOptions = {
           from: process.env.EMAIL,
           to: recipientEmail,
-          subject: `Viewing Appointment ${status.charAt(0).toUpperCase() + status.slice(1)} - BuildEstate`,
+          subject: `Viewing Appointment ${status.charAt(0).toUpperCase() + status.slice(1)} - NestPrime`,
           html: getEmailTemplate(appointment, status)
         };
 
@@ -317,7 +317,7 @@ export const scheduleViewing = async (req, res) => {
         const mailOptions = {
           from: process.env.EMAIL,
           to: recipientEmail,
-          subject: 'Viewing Scheduled - BuildEstate',
+          subject: 'Viewing Scheduled - NestPrime',
           html: getSchedulingEmailTemplate(appointment, date, time, notes || message || '')
         };
         transporter.sendMail(mailOptions).catch(emailErr => {
@@ -377,7 +377,7 @@ export const cancelAppointment = async (req, res) => {
         const mailOptions = {
           from: process.env.EMAIL,
           to: recipientEmail,
-          subject: 'Appointment Cancelled - BuildEstate',
+          subject: 'Appointment Cancelled - NestPrime',
           html: getEmailTemplate(appointment, 'cancelled')
         };
 
@@ -446,7 +446,7 @@ export const updateAppointmentMeetingLink = async (req, res) => {
         const mailOptions = {
           from: process.env.EMAIL,
           to: recipientEmail,
-          subject: 'Meeting Link Updated - BuildEstate',
+          subject: 'Meeting Link Updated - NestPrime',
           html: getEmailTemplate(appointment, 'confirmed')
         };
 

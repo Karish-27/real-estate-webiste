@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const AICTASection: React.FC = () => {
   return (
-    <section className="bg-gradient-to-br from-[#221410] to-[#3d2519] py-20 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-[#221410] to-[#3d2519] py-10 md:py-20 relative overflow-hidden">
       {/* Decorative blobs */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div className="absolute top-10 right-20 w-64 h-64 bg-[#D4755B]/10 rounded-full blur-3xl" />

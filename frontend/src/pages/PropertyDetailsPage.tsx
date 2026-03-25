@@ -45,7 +45,7 @@ const PropertyDetailsPage: React.FC = () => {
     title: property ? `${property.title} - ${property.location}` : 'Property Details',
     description: property
       ? `${property.title} in ${property.location}. ${property.beds} beds, ${property.baths} baths, ${property.sqft} sqft. ${property.type}.`
-      : 'View property details on BuildEstate.',
+      : 'View property details on NestPrime.',
   });
 
   useEffect(() => {
@@ -165,6 +165,9 @@ const PropertyDetailsPage: React.FC = () => {
       {/* Navigation */}
       <Navbar />
 
+      {/* Offset for fixed navbar */}
+      <div className="pt-[70px]">
+
       {/* Breadcrumb Navigation */}
       <PropertyBreadcrumb
         city={city}
@@ -187,12 +190,12 @@ const PropertyDetailsPage: React.FC = () => {
       />
 
       {/* Main Content Area */}
-      <div className="bg-[#F2EFE9] py-12">
-        <div className="max-w-[1280px] mx-auto px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="bg-[#F2EFE9] py-8 md:py-12">
+        <div className="max-w-[1280px] mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Left Column - Main Content */}
             <div className="lg:col-span-2">
-              <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-sm">
+              <div className="bg-white border border-[#E6E0DA] rounded-2xl p-4 md:p-8 shadow-sm">
                 {/* About Section */}
                 <PropertyAbout description={property.description} />
 
@@ -219,6 +222,8 @@ const PropertyDetailsPage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      </div>{/* end pt-[70px] offset wrapper */}
 
       {/* Simple Footer */}
       <SimpleFooter />
