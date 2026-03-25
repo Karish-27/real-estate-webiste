@@ -1,8 +1,8 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F97316,100:FB923C&height=220&section=header&text=BuildEstate&fontSize=80&fontColor=ffffff&fontAlignY=35&animation=fadeIn&desc=AI-Powered+Real+Estate+Platform&descAlignY=58&descSize=24" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F97316,100:FB923C&height=220&section=header&text=NestPrime&fontSize=80&fontColor=ffffff&fontAlignY=35&animation=fadeIn&desc=AI-Powered+Real+Estate+Platform&descAlignY=58&descSize=24" width="100%"/>
 
 <div align="center">
 
-  <img src="./frontend/Assets/Logo.svg" alt="BuildEstate Logo" height="80" />
+  <img src="./frontend/Assets/Logo.svg" alt="NestPrime Logo" height="80" />
 
 <br/><br/>
 
@@ -24,7 +24,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/%F0%9F%9A%80_Live_Demo-buildestate.vercel.app-4285F4?style=for-the-badge)](https://buildestate.vercel.app)
+[![Live Demo](https://img.shields.io/badge/%F0%9F%9A%80_Live_Demo-NestPrime.vercel.app-4285F4?style=for-the-badge)](https://NestPrime.vercel.app)
 [![Backend API](https://img.shields.io/badge/%E2%9A%99%EF%B8%8F_Backend_API-Render-46E3B7?style=for-the-badge)](https://real-estate-website-backend-zfu7.onrender.com)
 
 <br/>
@@ -44,7 +44,7 @@
 ## 📸 Platform Preview
 
 <div align="center">
-  <img src="./Image/Home.png" alt="BuildEstate Homepage" width="100%" />
+  <img src="./Image/Home.png" alt="NestPrime Homepage" width="100%" />
 </div>
 
 <br/>
@@ -57,7 +57,7 @@
 
 |     | Section                                          |
 | :-: | :----------------------------------------------- |
-| 🧠  | [Why BuildEstate?](#-why-buildestate)            |
+| 🧠  | [Why NestPrime?](#-why-NestPrime)            |
 | 🤖  | [AI Property Hub](#-ai-property-hub)             |
 | 🌟  | [Features](#-features)                           |
 | 🏗️  | [Architecture](#%EF%B8%8F-architecture)          |
@@ -75,11 +75,11 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-## 🧠 Why BuildEstate?
+## 🧠 Why NestPrime?
 
-Most real-estate aggregators show you generic listings. BuildEstate is different:
+Most real-estate aggregators show you generic listings. NestPrime is different:
 
-| Problem | BuildEstate Solution |
+| Problem | NestPrime Solution |
 |---|---|
 | Generic search results with no real filtering | **Deterministic 99acres URLs** - city ID + property-type slug + budget index → pre-filtered pages |
 | No AI intelligence in traditional portals | **GPT-4.1 analysis** - best-value picks, investment tips, market comparison |
@@ -170,8 +170,8 @@ Users provide their **own free keys** in the browser. Keys are stored in localSt
 
 ```
 User's browser (localStorage)
-  buildestate_github_key   = "ghp_xxx"
-  buildestate_firecrawl_key = "fc-xxx"
+  NestPrime_github_key   = "ghp_xxx"
+  NestPrime_firecrawl_key = "fc-xxx"
          │
          │  X-Github-Key / X-Firecrawl-Key headers
          ▼

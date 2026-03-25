@@ -39,7 +39,7 @@ const OtherWaysSection: React.FC = () => {
 
   return (
     <section className="py-24" style={{ background: '#F2EFE9' }}>
-      <div className="max-w-[1280px] mx-auto px-8">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
 
         {/* Section Header */}
         <div className="text-center mb-14">

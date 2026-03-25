@@ -37,8 +37,8 @@ const STEPS = [
 ] as const;
 
 const ProcessSection: React.FC = () => (
-  <section className="py-24" style={{ background: '#FFFFFF' }}>
-    <div className="max-w-[1280px] mx-auto px-8">
+  <section className="py-12 md:py-24" style={{ background: '#FFFFFF' }}>
+    <div className="max-w-[1280px] mx-auto px-4 md:px-8">
 
       <motion.div
         className="text-center mb-16"
@@ -81,7 +81,7 @@ const ProcessSection: React.FC = () => (
         {STEPS.map(({ num, title, desc, icon }, i) => (
           <motion.div
             key={num}
-            className="text-center px-8 flex flex-col items-center"
+            className="text-center px-4 md:px-8 flex flex-col items-center"
             initial={{ opacity: 0, y: 32 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-40px' }}

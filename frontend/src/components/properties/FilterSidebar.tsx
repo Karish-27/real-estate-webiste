@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 
 interface FilterSidebarProps {
   onFilterChange?: (filters: any) => void;
+  isOpen?: boolean;
+  onClose?: () => void;
 }
 
-const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
+const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange, isOpen = false, onClose }) => {
   const [selectedLocation, setSelectedLocation] = useState('');
   const [selectedPropertyType, setSelectedPropertyType] = useState<string[]>([]);
   const [selectedAvailability, setSelectedAvailability] = useState('');
@@ -88,19 +90,44 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
   };
 
   return (
-    <div className="w-[359px] bg-white border-r border-[#E6E0DA] h-screen sticky top-20 overflow-y-auto pb-24">
+    <>
+      {/* Mobile backdrop */}
+      {isOpen && (
+        <div
+          className="md:hidden fixed inset-0 z-40 bg-black/50"
+          onClick={onClose}
+        />
+      )}
+
+      <div className={`
+        fixed md:static inset-y-0 left-0 z-50 md:z-auto
+        w-[300px] md:w-[359px]
+        bg-white border-r border-[#E6E0DA]
+        h-screen md:h-screen md:sticky md:top-20
+        overflow-y-auto pb-24
+        transition-transform duration-300 ease-in-out
+        ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
+      `}>
       <div className="p-6">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <h2 className="font-inter font-extralight text-lg text-[#111827]">
             Refine Your Search
           </h2>
-          <button 
-            onClick={handleReset}
-            className="font-inter font-extralight text-sm text-[#1B3A5C] hover:underline"
-          >
-            Reset all
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={handleReset}
+              className="font-inter font-extralight text-sm text-[#1B3A5C] hover:underline"
+            >
+              Reset all
+            </button>
+            <button
+              onClick={onClose}
+              className="md:hidden p-1 rounded-md text-[#6B7280] hover:text-[#111827] transition-colors"
+            >
+              <span className="material-icons text-xl">close</span>
+            </button>
+          </div>
         </div>
 
         {/* Location Filter */}
@@ -317,6 +344,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({ onFilterChange }) => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 

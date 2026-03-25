@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for BuildEstate
+about: Suggest an idea for NestPrime
 title: "[FEATURE] "
 labels: enhancement
 assignees: ''

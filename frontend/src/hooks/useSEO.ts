@@ -7,12 +7,12 @@ interface SEOProps {
 
 /**
  * Sets document title and meta description for the current page.
- * Title is appended with " | BuildEstate" suffix.
+ * Title is appended with " | NestPrime" suffix.
  */
 export function useSEO({ title, description }: SEOProps) {
   useEffect(() => {
     if (title) {
-      document.title = `${title} | BuildEstate`;
+      document.title = `${title} | NestPrime`;
     }
 
     if (description) {
@@ -27,7 +27,7 @@ export function useSEO({ title, description }: SEOProps) {
 
     // Restore default on unmount
     return () => {
-      document.title = 'BuildEstate - AI-Powered Luxury Real Estate | Find Your Dream Home';
+      document.title = 'NestPrime - AI-Powered Luxury Real Estate | Find Your Dream Home';
     };
   }, [title, description]);
 }

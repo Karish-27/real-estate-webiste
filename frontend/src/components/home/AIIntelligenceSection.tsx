@@ -256,8 +256,8 @@ const AIIntelligenceSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24" style={{ background: '#F5F3EE' }}>
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="py-12 md:py-24" style={{ background: '#F5F3EE' }}>
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
 
         <motion.div
           className="text-center mb-14"

@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
     <footer style={{ background: '#1B3A5C' }}>
 
       {/* Upper footer */}
-      <div className="max-w-[1280px] mx-auto px-8 py-16">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
 
           {/* Brand */}

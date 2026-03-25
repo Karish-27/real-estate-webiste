@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
         boxShadow: scrolled ? '0 2px 20px rgba(0,0,0,0.07)' : 'none',
       }}
     >
-      <div className="max-w-[1280px] mx-auto px-8 flex items-center justify-between h-[70px]">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex items-center justify-between h-[70px]">
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2.5" onClick={closeMobileMenu}>
@@ -170,7 +170,7 @@ const Navbar: React.FC = () => {
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
-          className="md:hidden absolute top-[70px] left-0 w-full py-6 px-8 flex flex-col gap-5"
+          className="md:hidden absolute top-[70px] left-0 w-full py-6 px-4 flex flex-col gap-5"
           style={{
             background: '#FFFFFF',
             borderBottom: '1px solid #E8E6E0',

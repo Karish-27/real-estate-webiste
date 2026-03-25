@@ -26,8 +26,8 @@ const AboutStatsSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F2EFE9] border-y border-[#E6E0DA] py-20">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-[#F2EFE9] border-y border-[#E6E0DA] py-10 md:py-20">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center group hover:transform hover:scale-105 transition-all duration-300">

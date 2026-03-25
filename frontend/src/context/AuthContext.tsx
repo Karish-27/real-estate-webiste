@@ -30,7 +30,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem('buildestate_token');
+    localStorage.removeItem('NestPrime_token');
   };
 
   const register = async (data: { fullName: string; email: string; phone: string; password: string }) => {

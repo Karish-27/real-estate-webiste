@@ -44,8 +44,8 @@ const AITopMatchesSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F2EFE9] py-24">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-[#F2EFE9] py-12 md:py-24">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="flex items-center justify-between mb-10">
           <div className="flex items-baseline gap-4">

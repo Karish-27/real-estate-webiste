@@ -19,7 +19,7 @@ const AboutHeroSection: React.FC = () => {
 
       {/* Content */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center max-w-[702px] px-8">
+        <div className="text-center max-w-[702px] px-4 md:px-8">
           <h1 className="font-playfair text-[56px] leading-[61.6px] text-[#F2EFE9] mb-6">
             Redefining Real Estate with<br />
             <span className="italic">Intelligence & Elegance</span>

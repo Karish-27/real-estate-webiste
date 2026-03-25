@@ -79,8 +79,8 @@ const StatsSection: React.FC = () => {
   const inView = useInView(ref, { once: true, margin: '-60px' });
 
   return (
-    <section className="py-20" style={{ background: '#F5F3EE' }}>
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="py-10 md:py-20" style={{ background: '#F5F3EE' }}>
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
 
         {/* Section header */}
         <motion.div

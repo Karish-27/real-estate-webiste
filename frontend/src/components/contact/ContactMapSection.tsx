@@ -3,8 +3,8 @@ import mapLocationImage from '../../images/Map:Location.jpg';
 
 const ContactMapSection: React.FC = () => {
   return (
-    <section className="bg-[#F2EFE9] py-16">
-      <div className="max-w-[1280px] mx-auto px-8">
+    <section className="bg-[#F2EFE9] py-8 md:py-16">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8">
         <div className="relative aspect-[1280/400] rounded-2xl overflow-hidden border border-[#E6E0DA] bg-gray-100">
           {/* Map Image */}
           <img 
@@ -21,7 +21,7 @@ const ContactMapSection: React.FC = () => {
               </span>
               <div className="text-left">
                 <p className="font-playfair font-bold text-base text-[#221410] mb-0.5">
-                  BuildEstate Office
+                  NestPrime Office
                 </p>
                 <p className="font-inter font-extralight text-xs text-[#64748B]">
                   Click to view on Google Maps
