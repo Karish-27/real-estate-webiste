@@ -1,26 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail } from 'lucide-react';
-
-const NestLogo: React.FC = () => (
-  <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M6 18L18 7L30 18V30H22V23H14V30H6V18Z" fill="none" stroke="#1B3A5C" strokeWidth="1.75" strokeLinejoin="round"/>
-    <circle cx="18" cy="7" r="2.5" fill="#1B3A5C"/>
-    <circle cx="6"  cy="18" r="2"  fill="#1B3A5C" opacity="0.5"/>
-    <circle cx="30" cy="18" r="2"  fill="#1B3A5C" opacity="0.5"/>
-  </svg>
-);
-
-const IconGitHub   = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>;
-const IconBehance  = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 11.5c.828 0 1.5-.672 1.5-1.5S8.328 8.5 7.5 8.5H4v3h3.5zm.5 2H4v3.5h4c.828 0 1.5-.672 1.5-1.5v-.5c0-.828-.672-1.5-1.5-1.5zM0 6h11.5c2.485 0 4.5 2.015 4.5 4.5 0 1.38-.622 2.614-1.6 3.45C15.47 14.82 16 16.09 16 17.5c0 2.485-2.015 4.5-4.5 4.5H0V6zm15.5 2.5h6v1h-6v-1zm.75 4c-.414 0-.75.336-.75.75h5c0-1.519-1.231-2.75-2.75-2.75-1.519 0-2.75 1.231-2.75 2.75 0 1.519 1.231 2.75 2.75 2.75.88 0 1.661-.413 2.154-1.053l-.898-.523A1.745 1.745 0 0 1 18.5 15c-.698 0-1.297-.41-1.582-1h4.064A2.745 2.745 0 0 0 21 13.25c0-1.519-1.231-2.75-2.75-2.75z"/></svg>;
-const IconDribbble = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.605 4.61a8.502 8.502 0 0 1 1.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 0 0-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0 1 12 3.475zm-3.633.803a53.896 53.896 0 0 1 3.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 0 1 4.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 0 1-2.19-5.705zM12 20.547a8.482 8.482 0 0 1-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.32 35.32 0 0 1 1.823 6.475 8.4 8.4 0 0 1-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 0 1-3.655 5.715z"/></svg>;
-const IconLinkedIn = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>;
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faBehance, faDribbble, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const SOCIAL_LINKS = [
-  { Icon: IconGitHub,   href: 'https://github.com/Karish-27',   label: 'GitHub' },
-  { Icon: IconBehance,  href: 'https://www.behance.net/krutikp',  label: 'Behance' },
-  { Icon: IconDribbble, href: 'https://dribbble.com/Krutik_Parmar', label: 'Dribbble' },
-  { Icon: IconLinkedIn, href: 'https://www.linkedin.com/in/karishma-kumavat-480891241', label: 'LinkedIn' },
+  { icon: faGithub,   href: 'https://github.com/Karish-27',   label: 'GitHub' },
+  { icon: faBehance,  href: 'https://www.behance.net/krutikp',  label: 'Behance' },
+  { icon: faDribbble, href: 'https://dribbble.com/Krutik_Parmar', label: 'Dribbble' },
+  { icon: faLinkedin, href: 'https://www.linkedin.com/in/karishma-kumavat-480891241', label: 'LinkedIn' },
 ];
 
 const Footer: React.FC = () => {
@@ -60,7 +48,7 @@ const Footer: React.FC = () => {
               and commercial real estate across India.
             </p>
             <div className="flex gap-2">
-              {SOCIAL_LINKS.map(({ Icon, href, label }) => (
+              {SOCIAL_LINKS.map(({ icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
@@ -76,7 +64,7 @@ const Footer: React.FC = () => {
                     (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.1)';
                   }}
                 >
-                  <span style={{ color: 'rgba(255,255,255,0.8)' }}><Icon /></span>
+                  <FontAwesomeIcon icon={icon} style={{ color: 'rgba(255,255,255,0.8)', width: 15, height: 15 }} />
                 </a>
               ))}
             </div>
@@ -121,7 +109,7 @@ const Footer: React.FC = () => {
                   style={{ color: 'rgba(255,255,255,0.65)' }}
                 >
                   <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.5)' }} />
-                  <span>14, Shapath Complex,<br />S.G. Highway, Ahmedabad</span>
+                  <span>12, Akshar Avenue,<br />Race Course Road, Vadodara</span>
                 </a>
               </li>
               <li>

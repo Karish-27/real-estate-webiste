@@ -16,9 +16,9 @@ const ContactInfoCards: React.FC = () => {
               Visit Our Office
             </h3>
             <p className="font-inter font-extralight text-sm text-[#4B5563] leading-relaxed mb-3">
-              502, Devpath Building,<br />
-              Near Torrent Lab,<br />
-              Ashram Road, Ahmedabad
+              12, Akshar Avenue,<br />
+              Near Alkapuri Circle,<br />
+              Race Course Road, Vadodara
             </p>
             <a 
               href="https://maps.google.com" 
@@ -55,7 +55,7 @@ const ContactInfoCards: React.FC = () => {
                 <span className="material-icons text-base">
                   call
                 </span>
-                <span>+91 98765 43210</span>
+                <span>+91 9512490729</span>
               </a>
               <a 
                 href="mailto:hello@NestPrime.com" 
@@ -64,7 +64,7 @@ const ContactInfoCards: React.FC = () => {
                 <span className="material-icons text-base">
                   email
                 </span>
-                <span>hello@NestPrime.com</span>
+                <span>karishmakumavat27@gmail.com.com</span>
               </a>
             </div>
           </div>
