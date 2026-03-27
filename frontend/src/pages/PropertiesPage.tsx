@@ -11,6 +11,8 @@ import { DUMMY_PROPERTIES, Property } from '../data/dummyProperties';
 
 export type { Property };
 
+const ITEMS_PER_PAGE = 12;
+
 const PropertiesPage: React.FC = () => {
   useSEO({
     title: 'Properties - Browse Listings',
@@ -23,6 +25,7 @@ const PropertiesPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState('featured');
+  const [currentPage, setCurrentPage] = useState(1);
   const [filters, setFilters] = useState<{
     location?: string;
     propertyType?: string[];
@@ -144,12 +147,20 @@ const PropertiesPage: React.FC = () => {
     return result;
   }, [properties, filters, sortBy]);
 
+  const totalPages = Math.ceil(filteredProperties.length / ITEMS_PER_PAGE);
+  const paginatedProperties = filteredProperties.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
   const handleFilterChange = (newFilters: any) => {
     setFilters(newFilters);
+    setCurrentPage(1);
   };
 
   const handleSortChange = (sort: string) => {
     setSortBy(sort);
+    setCurrentPage(1);
   };
 
   const handleViewChange = (mode: 'grid' | 'list') => {
@@ -212,7 +223,46 @@ const PropertiesPage: React.FC = () => {
 
           {/* Properties Grid */}
           {!loading && !error && filteredProperties.length > 0 && (
-            <PropertiesGrid properties={filteredProperties} viewMode={viewMode} />
+            <>
+              <PropertiesGrid properties={paginatedProperties} viewMode={viewMode} />
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <div className="flex items-center justify-center gap-2 pb-10">
+                  <button
+                    onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                    disabled={currentPage === 1}
+                    className="flex items-center gap-1 px-4 py-2 rounded-lg border border-[#E6E0DA] font-inter text-sm text-[#1B3A5C] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#F5F0EB] transition-colors"
+                  >
+                    <span className="material-icons text-base">chevron_left</span>
+                    Prev
+                  </button>
+
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                    <button
+                      key={page}
+                      onClick={() => setCurrentPage(page)}
+                      className={`w-9 h-9 rounded-lg font-inter text-sm transition-colors ${
+                        page === currentPage
+                          ? 'bg-[#1B3A5C] text-white'
+                          : 'border border-[#E6E0DA] text-[#1B3A5C] hover:bg-[#F5F0EB]'
+                      }`}
+                    >
+                      {page}
+                    </button>
+                  ))}
+
+                  <button
+                    onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                    disabled={currentPage === totalPages}
+                    className="flex items-center gap-1 px-4 py-2 rounded-lg border border-[#E6E0DA] font-inter text-sm text-[#1B3A5C] disabled:opacity-40 disabled:cursor-not-allowed hover:bg-[#F5F0EB] transition-colors"
+                  >
+                    Next
+                    <span className="material-icons text-base">chevron_right</span>
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>
